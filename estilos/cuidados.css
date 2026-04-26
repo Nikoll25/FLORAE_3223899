@@ -1,0 +1,72 @@
+.contenedor {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0px;
+    padding: 30px 20px 40px;
+    overflow: hidden;
+}
+
+/* IMAGEN */
+.imagen-planta {
+   margin-top: 120px;
+    width: 50%;
+    border-radius: 30px;
+    box-shadow: 1px 2px 5px  #555;
+}
+
+/* TARJETA INFO */
+.info {
+    background: rgb(248, 246, 241);;
+    padding: 46px;
+    height: 700px;
+    border-radius:20px 0 0 20px;
+    width: 525px;
+    border: 1px solid #d0d0d0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    position: relative;
+    right: -80px; 
+}
+.icono {
+    width: 200px;
+    height: 200px;
+    border: 2px solid rgb(204, 204, 204);
+    border-radius: 20%; /* esto lo hace redondo */
+    align-items: center;
+    justify-content: center;
+}
+.encabezadotarjeta {
+    display: flex;         /* Activa el modo lado a lado */
+    align-items: center;   /* Centra la flecha con el texto verticalmente */
+    gap: 45px;             /* Separa la flecha del texto */
+    margin-bottom: 20px;
+}
+
+.encabezadotarjeta h1 {
+    margin: 0;             /* ¡VITAL! Quita el espacio que traen los títulos por defecto */
+    font-size: 45px;
+    white-space: nowrap;   /* Evita que el título se baje si la tarjeta es angosta */
+    margin-top: 2px;
+}
+.imgvolver{
+    height: 50px;
+    width: 50px;
+    margin: 0px 10px;
+    margin-bottom: 0; 
+    display: block;
+    position: absolute; /* Se sale del flujo normal */
+    top: 20px;          /* Distancia desde el borde superior */
+    left: 20px;
+}
+.imgvolver:hover{
+    transform: scale(1.1);
+}
+.icono {
+    width: 60px;
+    height: 60px;
+    border: 2px solid rgb(204, 204, 204);
+    border-radius: 10%; /* esto lo hace redondo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,44 +1,62 @@
 /* CONTENEDOR (pone todo lado a lado) */
+
 .contenedor {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    gap: 40px;
-    padding: 15px 50px 80px 90px; 
+    gap: 0px;
+    padding: 30px 20px 40px;
+    overflow: hidden;
 }
 
 /* IMAGEN */
 .imagen-planta {
+   margin-top: 120px;
     width: 50%;
-    border-radius: 20px;
-    
+    border-radius: 30px;
+    box-shadow: 1px 2px 5px  #555;
 }
 
 /* TARJETA INFO */
 .info {
-    background: white;
-    padding: 25px;
-    border-radius: 20px;
-    width: 350px;
+    background: rgb(248, 246, 241);;
+    padding: 46px;
+    height: 700px;
+    border-radius:20px 0 0 20px;
+    width: 525px;
+    border: 1px solid #d0d0d0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    position: relative;
+    right: -80px; 
+}
+.infoplanta{
+ text-align: left;
+    font-size: 20px;
+    width: 400px;
+    line-height: 1.2;
+    margin: auto;
 }
 
 /* BOTÓN */
-.info button {
-    width: 100%;
-    padding: 12px;
+button {
+    width: 70%;
+    height: 45px;
+    margin: 10px 30px 50px 55px;
     border: none;
-    border-radius: 20px;
+    border-radius: 15px;
     background: #7da46c;
     color: white;
     cursor: pointer;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
-/* BOTÓN VOLVER */
-.volver img {
-    width: 60px;
-    margin: 20px 50px;
+.imgvolver{
+    height: 80px;
+    width: 80px;
+    margin: 15px 70px;
+    margin-bottom: 0; 
+    display: block;
 }
-
 /* OPCIONAL: HOVER BONITO */
 .info button:hover {
     background: #5f8a52;
@@ -52,15 +70,17 @@
 /* cada bloque */
 .dato {
     text-align: center;
+    font-size: 15px;
+    color: gray;
+    align-items: center;
 }
 
 /* 🔵 CÍRCULO */
 .icono {
     width: 60px;
     height: 60px;
-    border: 2px solid #ccc;
+    border: 2px solid rgb(204, 204, 204);
     border-radius: 50%; /* esto lo hace redondo */
-    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,6 +88,25 @@
 
 /* imagen dentro */
 .icono img {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
+
+}
+.link {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 15px 0;
+    color: gray;
+}
+.link:visited {
+    color: gray;
+}
+
+.link:hover {
+    color: #555;
+}
+
+.link:active {
+    color: rgb(79, 121, 91);
 }
