@@ -9,64 +9,170 @@
 
 /* IMAGEN */
 .imagen-planta {
-   margin-top: 120px;
+    margin-top: 120px;
     width: 50%;
     border-radius: 30px;
-    box-shadow: 1px 2px 5px  #555;
+    box-shadow: 1px 2px 5px #555;
 }
 
 /* TARJETA INFO */
 .info {
-    background: rgb(248, 246, 241);;
+    background: rgb(248, 246, 241);
+    ;
     padding: 46px;
-    height: 700px;
-    border-radius:20px 0 0 20px;
+    height: 800px;
+    border-radius: 20px 0 0 20px;
     width: 525px;
     border: 1px solid #d0d0d0;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
     position: relative;
-    right: -80px; 
-}
-.icono {
-    width: 200px;
-    height: 200px;
-    border: 2px solid rgb(204, 204, 204);
-    border-radius: 20%; /* esto lo hace redondo */
+    right: -80px;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    text-align: center;
+
 }
-.encabezadotarjeta {
-    display: flex;         /* Activa el modo lado a lado */
-    align-items: center;   /* Centra la flecha con el texto verticalmente */
-    gap: 45px;             /* Separa la flecha del texto */
-    margin-bottom: 20px;
+.info h6{
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(66, 66, 66);
+    margin-top: 0;     
+    padding-top: 10px;  
+    margin-bottom: 2px;
 }
 
-.encabezadotarjeta h1 {
-    margin: 0;             /* ¡VITAL! Quita el espacio que traen los títulos por defecto */
-    font-size: 45px;
-    white-space: nowrap;   /* Evita que el título se baje si la tarjeta es angosta */
-    margin-top: 2px;
+.contenedor-cuadros {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    width: 100%;
+    margin-top: 0;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
 }
-.imgvolver{
-    height: 50px;
-    width: 50px;
-    margin: 0px 10px;
-    margin-bottom: 0; 
-    display: block;
-    position: absolute; /* Se sale del flujo normal */
-    top: 20px;          /* Distancia desde el borde superior */
-    left: 20px;
+
+.cuadro{
+    flex: none;
+    width: 230px;
+    height: 170px;
+    border: 3.5px solid #adadad;
+    border-radius: 20px;
+    box-shadow: 1px 3px rgba(173, 173, 173, 0.214);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 10px;
+    gap: 10px;
+    box-sizing: border-box;
 }
-.imgvolver:hover{
-    transform: scale(1.1);
+.cuadro:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    transition: all 0.3s ease;
 }
-.icono {
-    width: 60px;
-    height: 60px;
-    border: 2px solid rgb(204, 204, 204);
-    border-radius: 10%; /* esto lo hace redondo */
+
+.cuadro p {
+    color: #717171;
+    margin: 0;
+    padding: 0;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.iconoredondo {
+    margin-top: 5px; 
+    box-sizing: border-box;
+    flex: none;
+    width: 55px;
+    height: 55px;
+    border: 2px solid #afafaf;
+    border-radius: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
+
+}
+
+.iconoredondo img {
+    width: 60%;
+    box-sizing: border-box;
+}
+
+.encabezadotarjeta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.imgvolver {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 60px;
+    height: 60px;
+}
+
+.encabezadotarjeta h1 {
+    font-size: 40px;
+    margin: 10px 70px;
+
+}
+
+.nombres {
+    padding: 25px;
+    margin-bottom: 10px;
+}
+
+.nombres h3 {
+    margin: 0;
+    font-size: 28px;
+    color: #333;
+}
+
+.nombres p {
+    margin: 0;
+    font-size: 20px;
+    color: #999;
+}
+.iconorecome {
+    flex: none;
+    width: 500px;
+    height: 80px;
+    border: 1px solid #9e9e9e;
+    border-radius: 20px;
+    box-shadow: 1px 3px 3px rgba(164, 164, 164, 0.205);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 10px; 
+    gap: 10px;
+    box-sizing: border-box;
+    margin-top: 0; 
+    
+}
+.iconodentro:hover{
+     border-left: 3px solid #c0392b;
+}
+.iconodentro {
+    background-color: rgb(240, 228, 207);
+    flex: none;
+    width: 480px;
+    height: 58px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;        
+    justify-content: flex-start; 
+    padding-left: 16px;       
+    gap: 10px;                 
+    box-sizing: border-box;
+}
+.iconodentro img {
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0; 
+}
+.iconorecome p {
+    text-align: left;
+    flex: none;       
 }
