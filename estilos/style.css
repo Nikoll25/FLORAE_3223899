@@ -2,7 +2,27 @@ body {
     background-color: #f8f6f1;
     overflow-x: hidden;
 }
+/* Ancho y forma */
+::-webkit-scrollbar {
+    width: 8px;
+}
 
+/* Fondo de la barra */
+::-webkit-scrollbar-track {
+    background: #f1ece4;
+    border-radius: 10px;
+}
+
+/* La barra en sí */
+::-webkit-scrollbar-thumb {
+    background: #a8c49a; /* verde como tu diseño */
+    border-radius: 10px;
+}
+
+/* Al pasar el mouse */
+::-webkit-scrollbar-thumb:hover {
+    background: #7a9e6e;
+}
 header {
     display: flex;
     justify-content: space-between;
