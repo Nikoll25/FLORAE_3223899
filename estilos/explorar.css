@@ -39,3 +39,51 @@
     box-shadow: 0px 4px 5px rgba(0,0,0,0.2);
     border-radius: 20px;
 }
+form {
+  display: flex;
+  align-items: center;
+  margin-left: 90px;
+  width: 48%;
+  height: 70px;
+  background: #fff;
+  border-radius: 27px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.20);
+  overflow: hidden;
+}
+
+.busqueda {
+  flex: 1;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 30px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 15px;
+  color: #222;
+  min-width: 0;
+  font-weight: 500; /* medium */
+  font-size: 20px;
+}
+
+.busqueda::placeholder {
+  color: #aaa;
+}
+
+button {
+  width: 83px;
+  height: 70px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background-color: #EFEFEF;
+  border-radius: 27px;
+}
+
+button img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
