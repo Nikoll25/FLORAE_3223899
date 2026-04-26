@@ -2,7 +2,7 @@
     p {
         color: rgb(139, 139, 139);
         text-align: center;
-        font-size: 18px;
+        font-size: 17px;
         margin: auto;
     }
 
@@ -58,11 +58,71 @@
     box-shadow: 0px 4px 5px rgba(0,0,0,0.2);
     border-radius: 20px;
 }
+form {
+  display: flex;
+  align-items: center;
+  margin-left: 90px;
+  width: 48%;
+  height: 70px;
+  background: #fff;
+  border-radius: 27px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.20);
+  overflow: hidden;
+}
+
 .busqueda {
-    margin-left: 90px;
-    width: 46%;
-    padding: 25px;
-    border-radius: 20px;
-    border: none;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.20);
+  flex: 1;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 30px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 15px;
+  color: #222;
+  min-width: 0;
+  font-weight: 500; /* medium */
+  font-size: 20px;
+}
+.busqueda::placeholder {
+  color: #aaa;
+}
+.botonlupa{
+  width: 83px;
+  height: 70px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background-color: #EFEFEF;
+  border-radius: 27px;
+  margin-right: 0;
+  box-shadow: none;
+
+}
+.botonlupa img{
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+.contenedorcuadro {
+  background-color: #89AB78;
+  width: 700px;
+  height: 70px;
+  margin-top: 25px;
+  margin-bottom: 0;
+  border-radius: 17px;
+  margin-left: 88px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.contenedorcuadro p {
+  text-align: left;
+  color: white;
+  margin: 0 17px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 17px;
 }

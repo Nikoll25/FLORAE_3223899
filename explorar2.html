@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="estilos/explorar2.css">
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <div class="izquierda">
@@ -23,8 +24,14 @@
     <section>
         <h1>Encuentra y expande tu colección</h1>
         <form action="explorar2.html" method="get">
-            <input class="busqueda" type="text" placeholder="Busca por nombre común, cientifico o apodos">
+            <input class="busqueda" type="text" name="q" placeholder="Busca por nombre común, científico o apodos">
+            <button class="botonlupa" type="submit">
+                <img src="imagenes/lupa.png" alt="Buscar">
+            </button>
         </form>
+        <div class="contenedorcuadro">
+            <p>No se encontraron resultador exacto para ‘orquidea’, pero te pueden interesar estas coincidencias;</p>
+        </div>
         <div class="cards">
             <div class="card">
                 <img class="cardimg" src="imagenes/Cattleya.jpg" alt="">
@@ -46,8 +53,7 @@
                 <button onclick="window.location.href='detalleplanta.html'"><strong>ver más</strong></button>
             </div>
             <div class="card">
-                <img class="cardimg"
-                    src="https://upload.wikimedia.org/wikipedia/commons/8/87/Brassia_arcuigera.jpg">
+                <img class="cardimg" src="https://upload.wikimedia.org/wikipedia/commons/8/87/Brassia_arcuigera.jpg">
                 <h3>Brassia caudata</h3>
                 <p><em>“Orquídea Araña”</em></p>
                 <button onclick="window.location.href='detalleplanta.html'"><strong>ver más</strong></button>
@@ -94,12 +100,14 @@
                 <p><em>“sabila”</em></p>
             </div>
             <div class="card">
-                <img style="height: 200px;width: 240px; margin:3px 5px ;box-shadow: 0px 4px 5px;border-radius: 20px;" src="imagenes/sabila.jpg">
+                <img style="height: 200px;width: 240px; margin:3px 5px ;box-shadow: 0px 4px 5px;border-radius: 20px;"
+                    src="imagenes/sabila.jpg">
                 <h3>Aloe barbadensis miller</h3>
                 <p><em>“sabila”</em></p>
             </div>
             <div class="card">
-                <img style="height: 200px;width: 240px; margin:3px 5px ;box-shadow: 0px 4px 5px;border-radius: 20px;" src="imagenes/sabila.jpg">
+                <img style="height: 200px;width: 240px; margin:3px 5px ;box-shadow: 0px 4px 5px;border-radius: 20px;"
+                    src="imagenes/sabila.jpg">
                 <h3>Aloe barbadensis miller</h3>
                 <p><em>“sabila”</em></p>
             </div>
