@@ -59,6 +59,22 @@ nav a:hover {
     align-items: center;
     gap: 20px;
 }
+.derecha {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.campana {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.campana img {
+  width: 28px;
+  height: 28px;
+}
 .cards {
     display: flex;
     gap: 20px;
