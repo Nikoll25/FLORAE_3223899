@@ -1,0 +1,170 @@
+.contenedor {
+    display: flex;
+    gap: 0;
+    margin-left: 130px;
+    margin-right: 0;
+    margin-top: 30px;
+    align-items: flex-start;
+}
+
+.columna-izquierda {
+    flex: 1;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.columna-derecha {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 400px;
+    display: flex;
+    margin-right: 200px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 65px;
+}
+
+/* encabezado */
+.encabezado {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 16px;
+}
+
+.imgvolver {
+    height: 50px;
+    width: 50px;
+    margin-left: 0;
+}
+
+.encabezado h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.apodo {
+    margin: 0;
+    font-style: italic;
+    color: #555;
+    font-size: 24px;
+}
+
+.imagen-planta {
+    width: 70%;
+    border-radius: 30px;
+    box-shadow: 1px 2px 5px #555;
+}
+
+/* subtítulos */
+.subtitulo {
+    font-style: medium ;
+    font-weight: 530;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    align-self: flex-start;
+}
+
+/* cuidados */
+.cuidados {
+    display: flex;
+    gap: 35px;
+    margin-top: 10px;
+
+}
+
+.cuidado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: px;
+    width: 0;
+    height: 130px;
+    flex: 0.16;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.cuidado img {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.nombre-cuidado {
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 2px;
+}
+
+.detalle-cuidado {
+    font-size: 13px;
+    color: #777;
+    margin: 0;
+}
+
+/* círculo salud */
+.circulo-salud {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 15px solid #04DC4A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    font-size: 16px;
+    color: #333;
+}
+
+/* botón riego */
+.btn-riego {
+    background: #89AB78;
+    color: #fff;
+    border-radius: 16px;
+    padding: 16px 28px;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 20px;
+    font-size: 18px;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+/* historial */
+.historial {
+    width: 100%;
+}
+
+.actividad {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 8px;
+    margin-left: 0;
+}
+
+.num {
+    font-size: 14px;
+    color: #555;
+    min-width: 16px;
+}
+
+.actividad p {
+    margin: 0;
+    font-size: 14px;
+    font-style: italic;
+    color: #555;
+}
+
+.actividad hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+    width: 300%;
+}
