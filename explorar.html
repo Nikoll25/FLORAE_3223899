@@ -2,132 +2,205 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/explorar.css">
-    <title>Document</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos/style.css">
+  <link rel="stylesheet" href="estilos/explorar.css">
+  <title>Document</title>
 </head>
+
 <body>
-        <header>
-            <div class="izquierda">
-                <img class="logo" src="imagenes/logo.png" alt="logo">
-                <nav>
-                    <a href="/jardin.html">Jardin</a>
-                    <a href="/explorar.html">Explorar</a>
-                    <a href="/calendario.html">Calendario</a>
-                </nav>
+  <header>
+    <div class="izquierda">
+      <img class="logo" src="imagenes/logo.png" alt="logo">
+      <nav>
+        <a href="/jardin.html">Jardin</a>
+        <a href="/explorar.html">Explorar</a>
+        <a href="/calendario.html">Calendario</a>
+      </nav>
+    </div>
+    <div class="derecha">
+      <div class="campana-wrapper">
+        <input type="checkbox" id="check-panel">
+        <label for="check-panel" class="campana">
+          <img src="imagenes/campana.png" alt="Notificaciones">
+        </label>
+        <div class="panel">
+          <div class="panel-top">
+            <span>Notificaciones</span>
+            <label for="check-panel" class="marcar">✕ Cerrar</label>
+          </div>
+          <p class="categoria">Nuevas</p>
+          <div class="tarjeta">
+            <div class="circulo verde">
+              <img src="imagenes/riego.png" alt="">
             </div>
-            <img class="perfil" src="imagenes/perfil.png" alt="perfil">
-        </header>
-        <section>
-            <h1>Encuentra y expande tu colección</h1>
-
-            <form action="explorar2.html" method="get">
-                <input class="busqueda" type="text" name="q" placeholder="Busca por nombre común, científico o apodos">
-                <button type="submit">
-                    <img src="imagenes/lupa.png" alt="Buscar">
-                </button>
-            </form>
-
-            <div class="iconos-lateral">
-                <a href="explorar.html">
-                    <div class="icono activo">
-                        <img src="imagenes/planta.png" alt="Plantas">
-                    </div>
-                </a>
-                <a href="explorar 
-                plagas.html">
-                    <div class="icono">
-                        <img src="imagenes/plaga.png" alt="Plagas">
-                    </div>
-                </a>
+            <div class="texto">
+              <h4>Riego — Cattleya Trianae</h4>
+              <p>Han pasado 7 días. Es hora de regar tu planta.</p>
+              <small>Hace 10 minutos</small>
             </div>
-            <div class="cards">
-                <div class="card">
-                    <img class="cardimg" src="imagenes/adelonema.jpg" alt="">
-                    <h3>Adelonema picturatum</h3>
-                    <p><em>“Adelonema”</em></p>
-                </div>
-                <div class="card">
-                    <img class="cardimg" src="imagenes/limoncillo.jpg">
-                    <h3>Amyris balsamifera</h3>
-                    <p><em>“Ulanda, Limoncillo”</em></p>
-                </div>
-
-                <div class="card">
-                    <img class="cardimg" src="imagenes/sabila.jpg">
-                    <h3>Aloe barbadensis miller</h3>
-                    <p><em>“sabila”</em></p>
-                </div>
-                <div class="card">
-                    <img class="cardimg" src="imagenes/sabila.jpg">
-                    <h3>Aloe barbadensis miller</h3>
-                    <p><em>“sabila”</em></p>
-                </div>
-                <div class="card">
-                    <img class="cardimg" src="imagenes/sabila.jpg">
-                    <h3>Aloe barbadensis miller</h3>
-                    <p><em>“sabila”</em></p>
-                </div>
-                <div class="card">
-                    <img class="cardimg" src="imagenes/sabila.jpg">
-                    <h3>Aloe barbadensis miller</h3>
-                    <p><em>“sabila”</em></p>
-                </div>
-                <div class="card">
-                    <img class="cardimg" src="imagenes/sabila.jpg">
-                    <h3>Aloe barbadensis miller</h3>
-                    <p><em>“sabila”</em></p>
-                </div>
-                <div class="card">
-                    <img class="cardimg" src="imagenes/sabila.jpg">
-                    <h3>Aloe barbadensis miller</h3>
-                    <p><em>“sabila”</em></p>
-                </div>
-                <div class="card">
-                    <img class="cardimg" src="imagenes/sabila.jpg">
-                    <h3>Aloe barbadensis miller</h3>
-                    <p><em>“sabila”</em></p>
-                </div>
-                <div class="card">
-                    <img class="cardimg" src="imagenes/sabila.jpg">
-                    <h3>Aloe barbadensis miller</h3>
-                    <p><em>“sabila”</em></p>
-                </div>
-                <div class="card">
-                    <img class="cardimg" src="imagenes/sabila.jpg">
-                    <h3>Aloe barbadensis miller</h3>
-                    <p><em>“sabila”</em></p>
-                </div>
-                <div class="card">
-                    <img class="cardimg" src="imagenes/sabila.jpg">
-                    <h3>Aloe barbadensis miller</h3>
-                    <p><em>“sabila”</em></p>
-                </div>
-                <div class="card">
-                    <img class="cardimg" src="imagenes/sabila.jpg">
-                    <h3>Aloe barbadensis miller</h3>
-                    <p><em>“sabila”</em></p>
-                </div>
-                <div class="card">
-                    <img class="cardimg" src="imagenes/sabila.jpg">
-                    <h3>Aloe barbadensis miller</h3>
-                    <p><em>“sabila”</em></p>
-                </div>
-                <div class="card">
-                    <img class="cardimg" src="imagenes/sabila.jpg">
-                    <h3>Aloe barbadensis miller</h3>
-                    <p><em>“sabila”</em></p>
-                </div>
-
+            <div class="punto"></div>
+          </div>
+          <hr class="linea">
+          <div class="tarjeta">
+            <div class="circulo amarillo">
+              <img src="imagenes/fertilizacionverde.png" alt="">
             </div>
-        </section>
-        <footer>
+            <div class="texto">
+              <h4>Fertilización — Masdevallia</h4>
+              <p>Recuerda fertilizar hoy según tu calendario.</p>
+              <small>Hace 1 hora</small>
+            </div>
+            <div class="punto"></div>
+          </div>
+          <p class="categoria" style="margin-top: 12px;">Anteriores</p>
+          <div class="tarjeta">
+            <div class="circulo gris">
+              <img src="imagenes/check.png" alt="">
+            </div>
+            <div class="texto">
+              <h4 class="leida">Riego completado — Odontoglossum</h4>
+              <p>Riego registrado. Próximo en 7 días.</p>
+              <small>Ayer, 3:00 PM</small>
+            </div>
+          </div>
+          <hr class="linea">
+          <div class="tarjeta">
+            <div class="circulo gris">
+              <img src="imagenes/riego.png" alt="">
+            </div>
+            <div class="texto">
+              <h4 class="leida">Próximo riego — Cattleya Trianae</h4>
+              <p>Programado para mañana a las 8:00 AM.</p>
+              <small>Ayer, 10:00 AM</small>
+            </div>
+          </div>
+           <hr class="linea">
+          <div class="tarjeta">
+            <div class="circulo gris">
+              <img src="imagenes/fertilizacionverde.png" alt="">
+            </div>
+            <div class="texto">
+             <h4 class="leida">Fertilización — Masdevallia</h4>
+              <p>Recuerda fertilizar hoy según tu calendario.</p>
+              <small>Ayer, 08:00 AM</small>
+            </div>
+          </div>
+           <hr class="linea">
+          <div class="tarjeta">
+            <div class="circulo gris">
+              <img src="imagenes/riego.png" alt="">
+            </div>
+            <div class="texto">
+              <h4 class="leida">Próximo riego — Cattleya Trianae</h4>
+              <p>Programado para mañana a las 8:00 AM.</p>
+              <small>Ayer, 10:00 AM</small>
+            </div>
+          </div>
+           <hr class="linea">
+          <div class="tarjeta">
+            <div class="circulo gris">
+              <img src="imagenes/riego.png" alt="">
+            </div>
+            <div class="texto">
+              <h4 class="leida">Próximo riego— Cattleya Trianae</h4>
+              <p>Programado para mañana a las 8:00 AM.</p>
+              <small>Ayer, 10:00 AM</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img class="perfil" src="imagenes/perfil.png" alt="perfil">
+    </div>
+  </header>
 
-        </footer>
-    </article>
+  <section>
+    <h1>Encuentra y expande tu colección</h1>
+
+    <form action="explorar2.html" method="get">
+      <input class="busqueda" type="text" name="q" placeholder="Busca por nombre común, científico o apodos">
+      <button type="submit">
+        <img src="imagenes/lupa.png" alt="Buscar">
+      </button>
+    </form>
+
+    <div class="iconos-lateral">
+      <a href="explorar.html">
+        <div class="icono activo">
+          <img src="imagenes/planta.png" alt="Plantas">
+        </div>
+      </a>
+      <a href="explorarplagas.html">
+        <div class="icono">
+          <img src="imagenes/plaga.png" alt="Plagas">
+        </div>
+      </a>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <img class="cardimg" src="imagenes/lengua.avif" alt="">
+        <h3>Dracaena trifasciata</h3>
+        <p><em>"Lengua de suegra"</em></p>
+      </div>
+      <div class="card">
+        <img class="cardimg" src="imagenes/corona.avif" alt="">
+        <h3>Euphorbia milii</h3>
+        <p><em>"Corona de cristo "</em></p>
+      </div>
+      <div class="card">
+        <img class="cardimg" src="imagenes/toronjil.png" alt="">
+        <h3>Melissa officinalis</h3>
+        <p><em>"Toronjil"</em></p>
+      </div>
+      <div class="card">
+        <img class="cardimg" src="imagenes/lirio.jpg" alt="">
+        <h3>Lilium candidum</h3>
+        <p><em>"Lirio o Azucena"</em></p>
+      </div>
+       <div class="card">
+        <img class="cardimg" src="imagenes/dalia.webp" alt="">
+        <h3>Dahlia pinnata</h3>
+        <p><em>"Dalia"</em></p>
+      </div>
+       <div class="card">
+        <img class="cardimg" src="imagenes/morera.webp" alt="">
+        <h3>Morus alba</h3>
+        <p><em>"Morera"</em></p>
+      </div>
+       <div class="card">
+        <img class="cardimg" src="imagenes/hibisco.webp" alt="">
+        <h3>Hibiscus rosa-sinensis</h3>
+        <p><em>"Hibisco"</em></p>
+      </div>
+       <div class="card">
+        <img class="cardimg" src="imagenes/Anturio.webp" alt="">
+        <h3>Anthurium andraeanum</h3>
+        <p><em>"Anturio"</em></p>
+      </div>
+      <div class="card">
+        <img class="cardimg" src="imagenes/petunia.webp" alt="">
+        <h3>Petunia × hybrida</h3>
+        <p><em>"Petunia"</em></p>
+      </div><div class="card">
+        <img class="cardimg" src="imagenes/lavanda.jpg" alt="">
+        <h3>Lavandula angustifolia</h3>
+        <p><em>""Lavanda""</em></p>
+      </div>
+      <div class="card">
+        <img class="cardimg" src="imagenes/limoncillo.jpg">
+        <h3>Amyris balsamifera</h3>
+        <p><em>"Ulanda, Limoncillo"</em></p>
+      </div>
+      <div class="card">
+        <img class="cardimg" src="imagenes/sabila.jpg">
+        <h3>Aloe barbadensis miller</h3>
+        <p><em>"sabila"</em></p>
+      </div>
+    </div>
+  </section>
+
+  <footer></footer>
+
 </body>
-
 </html>
