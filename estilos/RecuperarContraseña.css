@@ -7,7 +7,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  background:url("/ImagenesJaiver/FondoBody.png") no-repeat center center/cover;
+  background: url("/ImagenesJaiver/Fondo.png") no-repeat center center/cover;
 }
 
 /* CONTENEDOR */
@@ -31,19 +31,27 @@ body {
   box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
-/* HEADER */
+/* 🔥 HEADER (ARREGLADO) */
 .header {
   display: flex;
   align-items: center;
-  gap: 8px;
+  justify-content: center; /* centra todo */
+  gap: 2px; /* 🔥 más pegado */
   font-weight: bold;
 }
 
+/* 🔥 LOGO MÁS GRANDE */
 .header img {
-  width: 25px;
+  width: 40px; /* antes 25px */
 }
 
-/* ICONO */
+/* 🔥 TEXTO PEGADO */
+.header span {
+  margin-left: 3px;
+  font-size: 18px;
+}
+
+/* ICONO SUPERIOR */
 .icono-top img {
   width: 70px;
   margin: 10px 0;
