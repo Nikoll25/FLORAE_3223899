@@ -1,116 +1,117 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/calendario.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos/style.css" />
+    <link rel="stylesheet" href="estilos/calendario.css" />
     <title>Document</title>
-</head>
-<body>
-      <header>
-    <div class="izquierda">
-      <img class="logo" src="imagenes/logo.png" alt="logo">
-      <nav>
-        <a href="/jardin.html">Jardin</a>
-        <a href="/explorar.html">Explorar</a>
-        <a href="/calendario.html">Calendario</a>
-      </nav>
-    </div>
-    <div class="derecha">
-      <div class="campana-wrapper">
-        <input type="checkbox" id="check-panel">
-        <label for="check-panel" class="campana">
-          <img src="imagenes/campana.png" alt="Notificaciones">
-        </label>
-        <div class="panel">
-          <div class="panel-top">
-            <span>Notificaciones</span>
-            <label for="check-panel" class="marcar">✕ Cerrar</label>
-          </div>
-          <p class="categoria">Nuevas</p>
-          <div class="tarjeta">
-            <div class="circulo verde">
-              <img src="imagenes/riego.png" alt="">
+  </head>
+
+  <body>
+    <header>
+      <div class="izquierda">
+        <img class="logo" src="imagenes/logo.png" alt="logo" />
+        <nav>
+          <a href="/jardin.html">Jardin</a>
+          <a href="/explorar.html">Explorar</a>
+          <a href="/calendario.html">Calendario</a>
+        </nav>
+      </div>
+      <div class="derecha">
+        <div class="campana-wrapper">
+          <input type="checkbox" id="check-panel" />
+          <label for="check-panel" class="campana">
+            <img src="imagenes/campana.png" alt="Notificaciones" />
+          </label>
+          <div class="panel">
+            <div class="panel-top">
+              <span>Notificaciones</span>
+              <label for="check-panel" class="marcar">✕ Cerrar</label>
             </div>
-            <div class="texto">
-              <h4>Riego — Cattleya Trianae</h4>
-              <p>Han pasado 7 días. Es hora de regar tu planta.</p>
-              <small>Hace 10 minutos</small>
+            <p class="categoria">Nuevas</p>
+            <div class="tarjeta">
+              <div class="circulo verde">
+                <img src="imagenes/riego.png" alt="" />
+              </div>
+              <div class="texto">
+                <h4>Riego — Cattleya Trianae</h4>
+                <p>Han pasado 7 días. Es hora de regar tu planta.</p>
+                <small>Hace 10 minutos</small>
+              </div>
+              <div class="punto"></div>
             </div>
-            <div class="punto"></div>
-          </div>
-          <hr class="linea">
-          <div class="tarjeta">
-            <div class="circulo amarillo">
-              <img src="imagenes/fertilizacionverde.png" alt="">
+            <hr class="linea" />
+            <div class="tarjeta">
+              <div class="circulo amarillo">
+                <img src="imagenes/fertilizacionverde.png" alt="" />
+              </div>
+              <div class="texto">
+                <h4>Fertilización — Masdevallia</h4>
+                <p>Recuerda fertilizar hoy según tu calendario.</p>
+                <small>Hace 1 hora</small>
+              </div>
+              <div class="punto"></div>
             </div>
-            <div class="texto">
-              <h4>Fertilización — Masdevallia</h4>
-              <p>Recuerda fertilizar hoy según tu calendario.</p>
-              <small>Hace 1 hora</small>
+            <p class="categoria" style="margin-top: 12px">Anteriores</p>
+            <div class="tarjeta">
+              <div class="circulo gris">
+                <img src="imagenes/check.png" alt="" />
+              </div>
+              <div class="texto">
+                <h4 class="leida">Riego completado — Odontoglossum</h4>
+                <p>Riego registrado. Próximo en 7 días.</p>
+                <small>Ayer, 3:00 PM</small>
+              </div>
             </div>
-            <div class="punto"></div>
-          </div>
-          <p class="categoria" style="margin-top: 12px;">Anteriores</p>
-          <div class="tarjeta">
-            <div class="circulo gris">
-              <img src="imagenes/check.png" alt="">
+            <hr class="linea" />
+            <div class="tarjeta">
+              <div class="circulo gris">
+                <img src="imagenes/riego.png" alt="" />
+              </div>
+              <div class="texto">
+                <h4 class="leida">Próximo riego — Cattleya Trianae</h4>
+                <p>Programado para mañana a las 8:00 AM.</p>
+                <small>Ayer, 10:00 AM</small>
+              </div>
             </div>
-            <div class="texto">
-              <h4 class="leida">Riego completado — Odontoglossum</h4>
-              <p>Riego registrado. Próximo en 7 días.</p>
-              <small>Ayer, 3:00 PM</small>
+            <hr class="linea" />
+            <div class="tarjeta">
+              <div class="circulo gris">
+                <img src="imagenes/fertilizacionverde.png" alt="" />
+              </div>
+              <div class="texto">
+                <h4 class="leida">Fertilización — Masdevallia</h4>
+                <p>Recuerda fertilizar hoy según tu calendario.</p>
+                <small>Ayer, 08:00 AM</small>
+              </div>
             </div>
-          </div>
-          <hr class="linea">
-          <div class="tarjeta">
-            <div class="circulo gris">
-              <img src="imagenes/riego.png" alt="">
+            <hr class="linea" />
+            <div class="tarjeta">
+              <div class="circulo gris">
+                <img src="imagenes/riego.png" alt="" />
+              </div>
+              <div class="texto">
+                <h4 class="leida">Próximo riego — Cattleya Trianae</h4>
+                <p>Programado para mañana a las 8:00 AM.</p>
+                <small>Ayer, 10:00 AM</small>
+              </div>
             </div>
-            <div class="texto">
-              <h4 class="leida">Próximo riego — Cattleya Trianae</h4>
-              <p>Programado para mañana a las 8:00 AM.</p>
-              <small>Ayer, 10:00 AM</small>
-            </div>
-          </div>
-           <hr class="linea">
-          <div class="tarjeta">
-            <div class="circulo gris">
-              <img src="imagenes/fertilizacionverde.png" alt="">
-            </div>
-            <div class="texto">
-             <h4 class="leida">Fertilización — Masdevallia</h4>
-              <p>Recuerda fertilizar hoy según tu calendario.</p>
-              <small>Ayer, 08:00 AM</small>
-            </div>
-          </div>
-           <hr class="linea">
-          <div class="tarjeta">
-            <div class="circulo gris">
-              <img src="imagenes/riego.png" alt="">
-            </div>
-            <div class="texto">
-              <h4 class="leida">Próximo riego — Cattleya Trianae</h4>
-              <p>Programado para mañana a las 8:00 AM.</p>
-              <small>Ayer, 10:00 AM</small>
-            </div>
-          </div>
-           <hr class="linea">
-          <div class="tarjeta">
-            <div class="circulo gris">
-              <img src="imagenes/riego.png" alt="">
-            </div>
-            <div class="texto">
-              <h4 class="leida">Próximo riego— Cattleya Trianae</h4>
-              <p>Programado para mañana a las 8:00 AM.</p>
-              <small>Ayer, 10:00 AM</small>
+            <hr class="linea" />
+            <div class="tarjeta">
+              <div class="circulo gris">
+                <img src="imagenes/riego.png" alt="" />
+              </div>
+              <div class="texto">
+                <h4 class="leida">Próximo riego— Cattleya Trianae</h4>
+                <p>Programado para mañana a las 8:00 AM.</p>
+                <small>Ayer, 10:00 AM</small>
+              </div>
             </div>
           </div>
         </div>
+        <img class="perfil" src="imagenes/perfil.png" alt="perfil" />
       </div>
-      <img class="perfil" src="imagenes/perfil.png" alt="perfil">
-    </div>
-  </header>
-</body>
+    </header>
+  </body>
 </html>
