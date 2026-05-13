@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="respaldo.css">
+    <title>Respaldo</title>
+</head>
+<body>
+    <aside class="sidebar">
+    <div class="sidebar-logo">
+        <img src="/ImagenesJaiver/logo.png" alt="">
+      <strong>Florae</strong>
+      <span>Panel de administración</span>
+    </div>
+    <nav>
+      <a href="#">Dashboard</a>
+      <a href="#">Plantas</a>
+      <a href="#">Plagas / Enfermedades</a>
+      <a href="#">Sustratos</a>
+      <a href="#">Usuarios</a>
+      <a href="#">Historial de cambios</a>
+      <a href="configuracion.html" class="activo">Configuración</a>
+    </nav>
+    <div class="sidebar-pie">
+      <button>Cerrar sesión</button>
+    </div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <div>
+        <h1>Configuración 🌿</h1>
+        <p>Administra las preferencias del sistema</p>
+      </div>
+      <div class="admin-pill">
+        <div class="admin-avatar">A</div>
+        Administrador ▾
+      </div>
+    </header>
+
+    <div class="layout">
+      <nav class="subnav">
+                <a href="general.html"> <img class="icono" src="/ImagenesJaiver/General.png" alt="">General</a>
+                <a href="Notificacione.html" > <img class="icono" src="/ImagenesJaiver/Notificaciones.png" alt="">Notificaciones</a>
+                <a href="seguridad.html"> <img class="icono" src="/ImagenesJaiver/Seguridad.png" alt="">Seguridad</a>
+                <a href="respaldo.html" class="activo"> <img class="icono" src="/ImagenesJaiver/Respaldo.png" alt="">Respaldo</a>
+                <a href="acerca-de.html"> <img class="icono" src="/ImagenesJaiver/AcercaDe.png" alt="">Acerca de</a>
+      </nav>
+
+      <div class="contenido">
+        <div class="cuerpo">
+
+          <div class="card">
+            <div class="card-titulo">Notificaciones por correo</div>
+
+            <div class="fila">
+              <div class="fila-texto">
+                <div class="etiqueta">Nuevos registros</div>
+                <div class="sub">Recibe correos cuando se agreguen nuevos registros.</div>
+              </div>
+              <label class="toggle">
+                <input type="checkbox" checked>
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+
+            <div class="fila">
+              <div class="fila-texto">
+                <div class="etiqueta">Actualizaciones importantes</div>
+                <div class="sub">Recibe correos sobre cambios importantes en el sistema.</div>
+              </div>
+              <label class="toggle">
+                <input type="checkbox" checked>
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+
+            <div class="fila">
+              <div class="fila-texto">
+                <div class="etiqueta">Reportes semanales</div>
+                <div class="sub">Recibe un resumen semanal de la actividad.</div>
+              </div>
+              <label class="toggle">
+                <input type="checkbox">
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-titulo">Notificaciones en el sistema</div>
+
+            <div class="fila">
+              <div class="fila-texto">
+                <div class="etiqueta">Alertas del sistema</div>
+                <div class="sub">Mostrar alertas dentro del panel.</div>
+              </div>
+              <label class="toggle">
+                <input type="checkbox" checked>
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+
+            <div class="fila">
+              <div class="fila-texto">
+                <div class="etiqueta">Recordatorios</div>
+                <div class="sub">Mostrar recordatorios de tareas y acciones pendientes.</div>
+              </div>
+              <label class="toggle">
+                <input type="checkbox" checked>
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="barra-guardar">
+          <button class="btn-verde">Guardar cambios</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

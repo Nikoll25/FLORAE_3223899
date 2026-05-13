@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/JaiverConfiguracion/Seguridad.css">
+    <title>Seguridad</title>
+</head>
+<body>
+      <aside class="sidebar">
+    <div class="sidebar-logo">
+      <img src="/ImagenesJaiver/logo.png" alt="">
+      <strong>Florae</strong>
+      <span>Panel de administración</span>
+    </div>
+    <nav>
+      <a href="#">Dashboard</a>
+      <a href="#">Plantas</a>
+      <a href="#">Plagas / Enfermedades</a>
+      <a href="#">Sustratos</a>
+      <a href="#">Usuarios</a>
+      <a href="#">Historial de cambios</a>
+      <a href="configuracion.html" class="activo">Configuración</a>
+    </nav>
+    <div class="sidebar-pie">
+      <button>Cerrar sesión</button>
+    </div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <div>
+        <h1>Configuración 🌿</h1>
+        <p>Administra las preferencias del sistema</p>
+      </div>
+      <div class="admin-pill">
+        <div class="admin-avatar">A</div>
+        Administrador ▾
+      </div>
+    </header>
+
+    <div class="layout">
+      <nav class="subnav">
+                <a href="general.html"> <img class="icono" src="/ImagenesJaiver/General.png" alt="">General</a>
+                <a href="Notificacione.html"> <img class="icono" src="/ImagenesJaiver/Notificaciones.png" alt="">Notificaciones</a>
+                <a href="seguridad.html" class="activo"> <img class="icono" src="/ImagenesJaiver/Seguridad.png" alt="">Seguridad</a>
+                <a href="respaldo.html"> <img class="icono" src="/ImagenesJaiver/Respaldo.png" alt="">Respaldo</a>
+                <a href="AcercaDe.html"> <img class="icono" src="/ImagenesJaiver/AcercaDe.png" alt="">Acerca de</a>
+      </nav>
+
+      <div class="contenido">
+        <div class="cuerpo">
+          <h2>Seguridad</h2>
+          <p class="desc">Administra opciones de seguridad y acceso al sistema.</p>
+
+          <div class="card">
+            <div class="fila">
+              <div class="fila-texto">
+                <div class="etiqueta">Contraseña actual</div>
+                <div class="sub">Ingresa tu contraseña actual para realizar cambios.</div>
+              </div>
+              <button class="btn-borde" onclick="document.getElementById('modal-pass').classList.add('abierto')">
+                Cambiar contraseña
+              </button>
+            </div>
+
+            <div class="fila">
+              <div class="fila-texto">
+                <div class="etiqueta">Sesiones activas</div>
+                <div class="sub">Gestiona las sesiones activas en tu cuenta.</div>
+              </div>
+              <button class="btn-borde" onclick="document.getElementById('modal-sesiones').classList.add('abierto')">
+                Ver sesiones
+              </button>
+            </div>
+
+            <div class="fila">
+              <div class="fila-texto">
+                <div class="etiqueta">Autenticación en dos pasos</div>
+                <div class="sub">Añade una capa extra de seguridad a tu cuenta.</div>
+              </div>
+              <label class="toggle">
+                <input type="checkbox" checked>
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+
+            <div class="fila">
+              <div class="fila-texto">
+                <div class="etiqueta">Política de contraseñas</div>
+                <div class="sub">Requiere contraseñas seguras para todos los usuarios.</div>
+              </div>
+              <label class="toggle">
+                <input type="checkbox" checked>
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="barra-guardar">
+          <button class="btn-verde">Guardar cambios</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Cambiar contraseña -->
+  <div class="modal-fondo" id="modal-pass">
+    <div class="modal">
+      <div class="modal-cabeza">
+        <h3>🔒 Cambiar contraseña</h3>
+        <button onclick="document.getElementById('modal-pass').classList.remove('abierto')">✕</button>
+      </div>
+
+      <label>Contraseña actual</label>
+      <div class="input-pass">
+        <input type="password" placeholder="Ingresa tu contraseña actual">
+        <button class="ojo">👁</button>
+      </div>
+
+      <label>Nueva contraseña</label>
+      <div class="input-pass">
+        <input type="password" placeholder="Ingresa tu nueva contraseña">
+        <button class="ojo">👁</button>
+      </div>
+
+      <label>Confirmar nueva contraseña</label>
+      <div class="input-pass">
+        <input type="password" placeholder="Confirma tu nueva contraseña">
+        <button class="ojo">👁</button>
+      </div>
+
+      <div class="modal-acciones">
+        <button class="btn-borde" onclick="document.getElementById('modal-pass').classList.remove('abierto')">Cancelar</button>
+        <button class="btn-verde">Guardar cambios</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Sesiones activas -->
+  <div class="modal-fondo" id="modal-sesiones">
+    <div class="modal" style="width: 460px;">
+      <div class="modal-cabeza">
+        <h3>Sesiones activas</h3>
+        <button onclick="document.getElementById('modal-sesiones').classList.remove('abierto')">✕</button>
+      </div>
+      <p style="font-size: 0.76rem; color: #6b856b; margin-bottom: 14px;">Estas son las sesiones activas en tu cuenta.</p>
+
+      <div class="sesion">
+        <div class="sesion-icono">🖥️</div>
+        <div class="sesion-info">
+          <div class="nombre">
+            Windows · Chrome
+            <span class="badge-actual">Esta sesión</span>
+          </div>
+          <div class="lugar">Lima, Perú</div>
+        </div>
+        <div class="sesion-fecha">18 May 2025</div>
+        <button class="sesion-menu">···</button>
+      </div>
+
+      <div class="sesion">
+        <div class="sesion-icono">💻</div>
+        <div class="sesion-info">
+          <div class="nombre">MacOS · Safari</div>
+          <div class="lugar">Bogotá, Colombia</div>
+        </div>
+        <div class="sesion-fecha">17 May 2025<br>04:30 p.m.</div>
+        <button class="sesion-menu">···</button>
+      </div>
+
+      <div class="sesion">
+        <div class="sesion-icono">📱</div>
+        <div class="sesion-info">
+          <div class="nombre">Android · Chrome</div>
+          <div class="lugar">Quito, Ecuador</div>
+        </div>
+        <div class="sesion-fecha">16 May 2025<br>09:15 a.m.</div>
+        <button class="sesion-menu">···</button>
+      </div>
+
+      <div class="modal-acciones">
+        <button class="btn-borde" onclick="document.getElementById('modal-sesiones').classList.remove('abierto')">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Cerrar modal al hacer clic fuera
+    document.querySelectorAll('.modal-fondo').forEach(fondo => {
+      fondo.addEventListener('click', function(e) {
+        if (e.target === this) this.classList.remove('abierto');
+      });
+    });
+  </script>
+</body>
+</html>
