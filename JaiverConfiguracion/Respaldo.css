@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -23,16 +24,16 @@ body {
   left: 0;
   bottom: 0;
 }
-
-.sidebar-logo {
-  padding: 20px 18px 14px;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-}
 .icono {
     width: 14px;
     height: 14px;
     margin-left: 6px;
     margin: 0 10px;
+}
+
+.sidebar-logo {
+  padding: 20px 18px 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 .sidebar-logo strong {
@@ -208,20 +209,13 @@ body {
   margin-bottom: 14px;
 }
 
-.card-titulo {
-  font-size: 0.82rem;
-  font-weight: 600;
-  padding: 14px 20px 0;
-  margin-bottom: 2px;
-}
-
 /* Fila */
 .fila {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  padding: 13px 20px;
+  padding: 14px 20px;
   border-bottom: 1px solid #d4e0d4;
 }
 
@@ -238,6 +232,24 @@ body {
   font-size: 0.72rem;
   color: #6b856b;
   margin-top: 2px;
+}
+
+/* Botones */
+.btn-borde {
+  background: #fff;
+  color: #1e2d1e;
+  border: 1px solid #d4e0d4;
+  padding: 7px 14px;
+  border-radius: 7px;
+  font-family: inherit;
+  font-size: 0.78rem;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn-borde:hover {
+  background: #e8f0e8;
 }
 
 /* Toggle */
@@ -282,6 +294,19 @@ body {
 
 .toggle input:checked + .toggle-slider::before {
   transform: translateX(16px);
+}
+
+/* Select */
+select {
+  padding: 7px 10px;
+  border: 1px solid #d4e0d4;
+  border-radius: 7px;
+  font-family: inherit;
+  font-size: 0.80rem;
+  color: #1e2d1e;
+  background: #fff;
+  cursor: pointer;
+  outline: none;
 }
 
 /* Barra guardar */
