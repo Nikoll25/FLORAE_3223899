@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="estilos/style.css">
-  <link rel="stylesheet" href="estilos/calendario.css">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/calendario.css">
+    <title>Document</title>
 </head>
 <body>
-  <header>
+      <header>
     <div class="izquierda">
       <img class="logo" src="imagenes/logo.png" alt="logo">
       <nav>
@@ -115,24 +114,14 @@
   </header>
   <section>
     <div class="contenedor-calendario">
-
       <!-- CALENDARIO -->
       <div class="calendario">
-
         <!-- ENCABEZADO -->
         <div class="encabezado">
-
-          <i class="fa-solid fa-chevron-left flecha"></i>
-
           <h1>ENERO 2026</h1>
-
-          <i class="fa-solid fa-chevron-right flecha"></i>
-
         </div>
-
         <!-- DIAS -->
         <div class="dias-semana">
-
           <div>LUNES</div>
           <div>MARTES</div>
           <div>MIERCOLES</div>
@@ -140,48 +129,36 @@
           <div>VIERNES</div>
           <div>SABADO</div>
           <div>DOMINGO</div>
-
         </div>
-
         <!-- CALENDARIO -->
         <div class="grid-calendario">
-
           <!-- FILA 1 -->
           <div class="dia"></div>
           <div class="dia"></div>
           <div class="dia"></div>
-
           <div class="dia">
             <div class="numero-dia">1</div>
           </div>
-
           <div class="dia">
             <div class="numero-dia">2</div>
           </div>
-
           <div class="dia">
             <div class="numero-dia">3</div>
           </div>
-
           <div class="dia">
             <div class="numero-dia">4</div>
           </div>
-
           <!-- FILA 2 -->
-
           <div class="dia">
             <div class="numero-dia">5</div>
+             <div class="icono">
+            </div>
           </div>
-
           <div class="dia evento">
-
             <div class="numero-dia">6</div>
-
             <div class="icono">
               <img src="imagenes/riegoazul.png">
-              <img src="imagenes/limpiarhojas.png" alt="">
             </div>
-
           </div>
 
           <div class="dia">
@@ -218,8 +195,12 @@
             <div class="numero-dia">14</div>
           </div>
 
-          <div class="dia">
+          <div class="dia evento">
             <div class="numero-dia">15</div>
+            <div class="icono">
+              <img src="imagenes/fertilizacionverde.png">
+              <img src="imagenes/limpiarhojas.png" alt="">
+            </div>
           </div>
 
           <div class="dia">
@@ -252,14 +233,8 @@
             <div class="numero-dia">22</div>
           </div>
 
-          <div class="dia evento">
-
+          <div class="dia">
             <div class="numero-dia">23</div>
-
-            <div class="icono">
-              <img src="imagenes/fertilizacionverde.png">
-            </div>
-
           </div>
 
           <div class="dia">
@@ -272,8 +247,11 @@
 
           <!-- FILA 5 -->
 
-          <div class="dia">
+          <div class="dia evento">
             <div class="numero-dia">26</div>
+            <div class="icono">
+              <img src="imagenes/riegoazul.png">
+            </div>
           </div>
 
           <div class="dia">
@@ -314,7 +292,7 @@
           </label>
           <div class="lista-plantas">
             <a href="calendario.html">
-              <div class="planta seleccionada">
+              <div class="planta">
               <img src="imagenes/Cattleya.jpg">
               <p>Orquídea Cattleya</p>
             </div></a>
@@ -324,7 +302,7 @@
               <p>Arbol de Jade</p>
             </div></a>
             <a href="geranio.html">
-              <div class="planta">
+              <div class="planta seleccionada">
               <img src="imagenes/geranio.jpg">
               <p>Geranio</p>
             </div>
@@ -338,13 +316,13 @@
           </div>
           <div class="tarea">
             <label for="hojas">
-              HOY - limpiar hojas
+              HOY - Fertilizante
             </label>
             <input type="checkbox" id="hojas">
           </div>
           <div class="tarea">
             <label for="riego">
-              HOY - Riego
+              HOY - Limpiar Hojas
             </label>
             <input type="checkbox" id="riego">
           </div>
@@ -354,6 +332,7 @@
         </form>
   </section>
    <footer>
+
   </footer>
 </body>
 </html>

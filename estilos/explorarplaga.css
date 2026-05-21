@@ -1,0 +1,167 @@
+
+    p {
+        color: rgb(139, 139, 139);
+        text-align: center;
+        font-size: 17px;
+        margin: auto;
+    }
+
+    h3 {
+        text-align: center;
+        margin: 5px 0 2px 0;
+
+    }
+
+    h1 {
+        margin: 90px;
+        margin-bottom: 35px;
+        font-size: 50px;
+    }
+
+    button {
+        background-color: rgb(137, 171, 120);
+        margin: 5px 65px;
+        border: none;
+        border-radius: 10px;
+        padding: 7px 35px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: white;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        transition: 0.2s;
+        box-shadow: 0 2px 0 #5a7a4b;
+    }
+    button:active {
+        transform: scale(0.9);
+        box-shadow: 0 2px 0 #5a7a4b;
+    }
+    .card {
+    background: #ffffff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 10px;
+    border-radius: 15px;
+    width: 250px;
+    height: 320px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.card:hover {
+    transform: translateY(-10px)scale(1.02);
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.25);
+}
+.cardimg {
+    height: 200px;
+    width: 240px;
+    margin: 3px 5px;
+    box-shadow: 0px 4px 5px rgba(0,0,0,0.2);
+    border-radius: 20px;
+}
+form {
+  display: flex;
+  align-items: center;
+  margin-left: 90px;
+  width: 48%;
+  height: 70px;
+  background: #fff;
+  border-radius: 27px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.20);
+  overflow: hidden;
+}
+
+.busqueda {
+  flex: 1;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 30px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 15px;
+  color: #222;
+  min-width: 0;
+  font-weight: 500; /* medium */
+  font-size: 20px;
+}
+.busqueda::placeholder {
+  color: #aaa;
+}
+.botonlupa{
+  width: 83px;
+  height: 70px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background-color: #EFEFEF;
+  border-radius: 27px;
+  margin-right: 0;
+  box-shadow: none;
+
+}
+.botonlupa img{
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+.contenedorcuadro {
+  background-color: #89AB78;
+  width: 700px;
+  height: 70px;
+  margin-top: 25px;
+  margin-bottom: 0;
+  border-radius: 17px;
+  margin-left: 88px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.contenedorcuadro p {
+  text-align: left;
+  color: white;
+  margin: 0 17px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 17px;
+}
+    .iconos-lateral {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: fixed;
+        right: 20px;
+        top: 130px;
+    }
+
+    .icono {
+        width: 72px;
+        height: 61px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        cursor: pointer;
+        transition: background 0.2s;
+        box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+
+    }
+
+    .icono img {
+        width: 26px;
+        height: 26px;
+    }
+
+    .icono.activo {
+        background: #88A675;
+    }
+
+    .icono.activo img {
+        filter: brightness(0) invert(1);
+    }
+
+    .icono:hover {
+        transform: translateY(-3px);
+            transition: all 0.3s ease;
+    }
