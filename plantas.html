@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantas</title>
+    <link rel="stylesheet" href="plantas.css">
+</head>
+
+<body>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="logo">
+            <img src="imagenes/logo.png" alt="Florae">
+            <span>Florae</span>
+        </div>
+
+        <nav>
+            <a href="#">🏠 Dashboard</a>
+            <a href="/" class="activo">🌿 Plantas</a>
+            <a href="#">🐛 Plagas</a>
+            <a href="#">👥 Usuarios</a>
+            <a href="/historial.html">📋 Historial</a>
+            <a href="/JaiverConfiguracion/General.html">⚙️ Configuración</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <img src="imagenes/logo.png" alt="logo" class="logo-bottom">
+            <a href="login.html" class="cerrar-sesion">🚪 Cerrar Sesión</a>
+        </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <header class="topbar">
+            <div class="topbar-titulo">
+                <h1>Gestión de plantas</h1>
+                <p>Administra la información de todas las plantas registradas en el sistema</p>
+            </div>
+            <div class="topbar-right">
+                <button class="btn-campana">🔔</button>
+                <div class="admin">
+                    <div class="admin-avatar">A</div>
+                    <span>Administrador</span>
+                    <span>▾</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="contenido">
+
+            <div class="filtros">
+                <div class="buscador">
+                    <span>🔍</span>
+                    <input type="text" placeholder="Buscar planta por nombre común o científico">
+                </div>
+                <div class="filtros-right">
+                    <button class="btn-categoria">Categoría ▾</button>
+                    <button class="btn-nueva">+ Nueva planta</button>
+                </div>
+            </div>
+
+            <div class="grilla">
+
+                <div class="tarjeta">
+                    <img src="imagenes/orquidia.png" alt="Orquídea Cattleya">
+                    <div class="tarjeta-info">
+                        <div class="tarjeta-nombre">Orquídea Cattleya</div>
+                        <div class="tarjeta-cientifico">"Flor de mayo"</div>
+                        <div class="tarjeta-pie">
+                            <span class="categoria-tag">Orquídeas</span>
+                            <div class="tarjeta-btns">
+                                <button class="btn-editar">✏️</button>
+                                <button class="btn-borrar">🗑</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="imagenes/ceriman.png" alt="Cerimán">
+                    <div class="tarjeta-info">
+                        <div class="tarjeta-nombre">Cerimán</div>
+                        <div class="tarjeta-cientifico">"Monstera deliciosa"</div>
+                        <div class="tarjeta-pie">
+                            <span class="categoria-tag">Follaje</span>
+                            <div class="tarjeta-btns">
+                                <button class="btn-editar">✏️</button>
+                                <button class="btn-borrar">🗑</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="imagenes/helecho.png" alt="Helecho arborescente">
+                    <div class="tarjeta-info">
+                        <div class="tarjeta-nombre">Helecho arborescente</div>
+                        <div class="tarjeta-cientifico">"Cyathea"</div>
+                        <div class="tarjeta-pie">
+                            <span class="categoria-tag">Helechos</span>
+                            <div class="tarjeta-btns">
+                                <button class="btn-editar">✏️</button>
+                                <button class="btn-borrar">🗑</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="imagenes/aloe.png" alt="Aloe Vera">
+                    <div class="tarjeta-info">
+                        <div class="tarjeta-nombre">Aloe Vera</div>
+                        <div class="tarjeta-cientifico">("L.") Burm. f</div>
+                        <div class="tarjeta-pie">
+                            <span class="categoria-tag">Suculentas</span>
+                            <div class="tarjeta-btns">
+                                <button class="btn-editar">✏️</button>
+                                <button class="btn-borrar">🗑</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="imagenes/anthurium.jpg" alt="Orquídea Cattleya">
+                    <div class="tarjeta-info">
+                        <div class="tarjeta-nombre">Orquídea Cattleya</div>
+                        <div class="tarjeta-cientifico">"Flor de mayo"</div>
+                        <div class="tarjeta-pie">
+                            <span class="categoria-tag">Ornamental</span>
+                            <div class="tarjeta-btns">
+                                <button class="btn-editar">✏️</button>
+                                <button class="btn-borrar">🗑</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="imagenes/lavanda.jpg" alt="Lavanda">
+                    <div class="tarjeta-info">
+                        <div class="tarjeta-nombre">Lavanda</div>
+                        <div class="tarjeta-cientifico">"Lavandula angustifolia"</div>
+                        <div class="tarjeta-pie">
+                            <span class="categoria-tag">Aromáticas</span>
+                            <div class="tarjeta-btns">
+                                <button class="btn-editar">✏️</button>
+                                <button class="btn-borrar">🗑</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="imagenes/calanthe.jpg" alt="Orquídea Calanthe">
+                    <div class="tarjeta-info">
+                        <div class="tarjeta-nombre">Orquídea Calanthe</div>
+                        <div class="tarjeta-cientifico">"Calanthe"</div>
+                        <div class="tarjeta-pie">
+                            <span class="categoria-tag">Orquídeas</span>
+                            <div class="tarjeta-btns">
+                                <button class="btn-editar">✏️</button>
+                                <button class="btn-borrar">🗑</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="imagenes/hierbabuena.png" alt="Hierbabuena">
+                    <div class="tarjeta-info">
+                        <div class="tarjeta-nombre">Hierbabuena</div>
+                        <div class="tarjeta-cientifico">"Mentha spicata L."</div>
+                        <div class="tarjeta-pie">
+                            <span class="categoria-tag">Aromáticas</span>
+                            <div class="tarjeta-btns">
+                                <button class="btn-editar">✏️</button>
+                                <button class="btn-borrar">🗑</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="paginacion">
+                <span>Mostrando de 1 a 8 de 20 plantas</span>
+                <div class="paginas">
+                    <button>‹</button>
+                    <button class="activa">1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>...</button>
+                    <button>16</button>
+                    <button>›</button>
+                </div>
+                <div class="mostrar">
+                    Mostrar
+                    <select>
+                        <option>8</option>
+                        <option>16</option>
+                        <option>24</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>
