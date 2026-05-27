@@ -16,10 +16,16 @@ body {
 /* ---- SIDEBAR ---- */
 .sidebar {
   width: 195px;
-  background: #2c4a2c;
+  background: #69845A;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
+}
+.icono {
+  width: 14px;
+  height: 14px;
+  margin-left: 6px;
+  margin: 0 10px;
 }
  
 .logo {

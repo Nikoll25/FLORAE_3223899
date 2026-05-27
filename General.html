@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/General.css">
+    <title>General</title>
+</head>
+
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <strong> Florae</strong>
+            <span>Panel de administración</span>
+        </div>
+        <nav>
+            <a href="/dashboard.html"> <img class="icono" src="/imagenes/casa.png" alt="">Dashboard</a>
+            <a href="/plantas.html"> <img class="icono" src="/imagenes/leaf .png" alt="">Plantas</a>
+            <a href="/plagas.html"> <img class="icono" src="/imagenes/cockroach.png" alt="">Plagas</a>
+            <a href="/usuario.html"> <img class="icono" src="/imagenes/user.png" alt="">Usuarios</a>
+            <a href="/historial.html"> <img class="icono" src="/imagenes/clock.png" alt="">Historial</a>
+            <a href="/JaiverConfiguracion/General.html" class="activo"> <img class="icono" src="/imagenes/Vector.png"
+                    alt="">Configuración</a>
+        </nav>
+        <div class="sidebar-pie">
+            <button><img class="icono" src="/imagenes/salida-de-incendios.png" alt="">Cerrar
+                sesión</button>
+        </div>
+    </aside>
+
+    <div class="main">
+        <header class="topbar">
+            <div>
+                <h1>Configuración 🌿</h1>
+                <p>Administra las preferencias del sistema</p>
+            </div>
+            <div class="admin-pill">
+                <div class="admin-avatar">A</div>
+                Administrador ▾
+            </div>
+        </header>
+
+        <div class="contenido">
+            <nav class="subnav">
+                <a href="general.html" class="activo"> <img class="icono" src="/imagenes/General.png" alt="">General</a>
+                <a href="Notificacione.html"> <img class="icono" src="/imagenes/Notificaciones.png"
+                        alt="">Notificaciones</a>
+                <a href="seguridad.html"> <img class="icono" src="/imagenes/Seguridad.png" alt="">Seguridad</a>
+                <a href="respaldo.html"> <img class="icono" src="/imagenes/Respaldo.png" alt="">Respaldo</a>
+            </nav>
+
+            <div class="pagina">
+                <div class="cuerpo">
+                    <h2>Configuración general</h2>
+                    <p class="desc"></p>
+
+                    <div class="card">
+                        <div class="fila">
+                            <div>
+                                <label>Nombre del sistema</label>
+                                <small>Nombre visible de tu sistema en el panel.</small>
+                            </div>
+                            <input type="text" value="Florae">
+                        </div>
+                        <div class="fila">
+                            <div>
+                                <label>Tema</label>
+                                <small>Selecciona el tema predeterminado del sistema.</small>
+                            </div>
+                            <select>
+                                <option>Tema claro</option>
+                                <option>Tema oscuro</option>
+                            </select>
+                        </div>
+                        <div class="fila">
+                            <div>
+                                <label>Idioma</label>
+                                <small>Selecciona el idioma predeterminado del sistema.</small>
+                            </div>
+                            <select>
+                                <option>Español</option>
+                                <option>English</option>
+                                <option>Português</option>
+                            </select>
+                        </div>
+
+                        <div class="fila">
+                            <div>
+                                <label>Zona horaria</label>
+                                <small>Define la zona horaria para fechas y reportes.</small>
+                            </div>
+                            <select>
+                                <option>(GMT-05:00) Lima, Bogotá, Quito</option>
+                                <option>(GMT-06:00) Ciudad de México</option>
+                                <option>(GMT-03:00) Buenos Aires</option>
+                            </select>
+                        </div>
+
+                        <div class="fila">
+                            <div>
+                                <label>Formato de fecha</label>
+                                <small>Elige el formato de fecha que deseas usar.</small>
+                            </div>
+                            <select>
+                                <option>DD MMM YYYY (18 May 2025)</option>
+                                <option>MM/DD/YYYY</option>
+                                <option>YYYY-MM-DD</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="barra-guardar">
+                    <button class="btn-verde">Guardar cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

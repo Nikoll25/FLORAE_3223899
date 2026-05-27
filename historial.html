@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="historial.css">
-    <title>Historial</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="historial.css">
+  <title>Historial</title>
 </head>
+
 <body>
-    <!-- SIDEBAR -->
-  <aside class="sidebar">
-    <div class="logo">
-      <img src="imagenes/logo.png" alt="Florae">
-      <span>Florae</span>
-    </div>
- 
+  <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <strong> Florae</strong>
+            <span>Panel de administración</span>
+        </div>
+
     <nav>
-      <a href="#">🏠 Dashboard</a>
-      <a href="/plantas.html">🌿 Plantas</a>
-      <a href="#">🐛 Plagas</a>
-      <a href="#">👥 Usuarios</a>
-      <a href="#" class="activo">📋 Historial</a>
-      <a href="/JaiverConfiguracion/General.html">⚙️ Configuración</a>
+      <a href="/dashboard.html"> <img class="icono" src="/imagenes/casa.png" alt="">Dashboard</a>
+      <a href="/plantas.html"> <img class="icono" src="/imagenes/leaf .png" alt="">Plantas</a>
+      <a href="/plagas.html"> <img class="icono" src="/imagenes/cockroach.png" alt="">Plagas</a>
+      <a href="/usuario.html"> <img class="icono" src="/imagenes/user.png" alt="">Usuarios</a>
+      <a href="/historial.html" class="activo"> <img class="icono" src="/imagenes/clock.png" alt="">Historial</a>
+      <a href="/General.html"> <img class="icono" src="/imagenes/Vector.png"
+          alt="">Configuración</a>
     </nav>
- 
+
     <div class="sidebar-footer">
       <img src="imagenes/logo.png" alt="logo" class="logo-footer">
-      <a href="login.html" class="cerrar-sesion">🚪 Cerrar Sesión</a>
+      <a href="login.html" class="cerrar-sesion"> <img class="icono" src="/imagenes/salida-de-incendios.png"
+          alt="">Cerrar Sesión</a>
     </div>
   </aside>
- 
+
   <!-- MAIN -->
   <main class="main">
- 
+
     <header class="topbar">
       <div class="topbar-titulo">
         <h1>Historial de cambios</h1>
@@ -46,15 +50,15 @@
         </div>
       </div>
     </header>
- 
+
     <div class="contenido">
       <div class="card">
- 
+
         <div class="buscador">
           <span>🔍</span>
           <input type="text" placeholder="Buscar Acción...">
         </div>
- 
+
         <table>
           <thead>
             <tr>
@@ -66,7 +70,7 @@
             </tr>
           </thead>
           <tbody>
- 
+
             <tr>
               <td class="col-accion">
                 <div class="icono-accion verde">✏️</div>
@@ -75,7 +79,7 @@
                   <div class="accion-sub">Se actualizaron los detalles de la planta</div>
                 </div>
               </td>
-              <td><span class="tag tag-planta">🌿 Planta</span></td>
+              <td><span class="tag tag-planta"> Planta</span></td>
               <td>
                 <div class="realizado">
                   <div class="avatar-verde">A</div>
@@ -85,7 +89,7 @@
               <td class="fecha">18 Mayo 2025<br><small>10:45 am</small></td>
               <td><button class="btn-mas">•••</button></td>
             </tr>
- 
+
             <tr>
               <td class="col-accion">
                 <div class="icono-accion verde">➕</div>
@@ -94,7 +98,7 @@
                   <div class="accion-sub">Se agrego una nueva planta al sistema</div>
                 </div>
               </td>
-              <td><span class="tag tag-planta">🌿 Planta</span></td>
+              <td><span class="tag tag-planta"> Planta</span></td>
               <td>
                 <div class="realizado">
                   <div class="avatar-verde">A</div>
@@ -104,7 +108,7 @@
               <td class="fecha">19 Mayo 2025<br><small>10:45 am</small></td>
               <td><button class="btn-mas">•••</button></td>
             </tr>
- 
+
             <tr>
               <td class="col-accion">
                 <div class="icono-accion naranja">📋</div>
@@ -123,7 +127,7 @@
               <td class="fecha">20 Mayo 2025<br><small>10:45 am</small></td>
               <td><button class="btn-mas">•••</button></td>
             </tr>
- 
+
             <tr>
               <td class="col-accion">
                 <div class="icono-accion morado">👤</div>
@@ -142,7 +146,7 @@
               <td class="fecha">21 Mayo 2025<br><small>10:45 am</small></td>
               <td><button class="btn-mas">•••</button></td>
             </tr>
- 
+
             <tr>
               <td class="col-accion">
                 <div class="icono-accion rojo">🗑</div>
@@ -161,7 +165,7 @@
               <td class="fecha">22 Mayo 2025<br><small>10:45 am</small></td>
               <td><button class="btn-mas">•••</button></td>
             </tr>
- 
+
             <tr>
               <td class="col-accion">
                 <div class="icono-accion rojo-claro">🐛</div>
@@ -180,13 +184,14 @@
               <td class="fecha">23 Mayo 2025<br><small>10:45 am</small></td>
               <td><button class="btn-mas">•••</button></td>
             </tr>
- 
+
           </tbody>
         </table>
- 
+
       </div>
     </div>
- 
+
   </main>
 </body>
+
 </html>

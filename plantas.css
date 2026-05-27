@@ -21,6 +21,12 @@ body {
   flex-direction: column;
   flex-shrink: 0;
 }
+.icono {
+  width: 14px;
+  height: 14px;
+  margin-left: 6px;
+  margin: 0 10px;
+}
 
 .logo {
   display: flex;
