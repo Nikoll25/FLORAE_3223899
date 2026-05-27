@@ -1,7 +1,7 @@
 .contenedor {
     display: flex;
     gap: 0;
-    margin-left: 130px;
+    margin-left: 100px;
     margin-right: 0;
     margin-top: 30px;
     align-items: flex-start;
@@ -23,14 +23,16 @@
     gap: 20px;
     margin-top: 65px;
 }
+
 /* subtítulos */
 .subtitulo {
-    font-style: medium ;
+    font-style: medium;
     font-weight: 530;
     font-size: 30px;
     margin-top: 30px;
     margin-bottom: 10px;
 }
+
 /* círculo salud */
 .circulo-salud {
     width: 160px;
@@ -44,11 +46,13 @@
     font-size: 16px;
     color: #333;
 }
+
 .circulo-salud:hover {
     box-shadow: 0 0 5px #00c853,
-                0 0 5px #00c853,
-                0 0 5px #00c853;
+        0 0 5px #00c853,
+        0 0 5px #00c853;
 }
+
 .btn-riego {
     background: #89AB78;
     color: #fff;
@@ -58,7 +62,7 @@
     text-align: center;
     font-weight: 700;
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 10px;
     box-sizing: border-box;
     box-shadow: 2px 2px 3px rgba(128, 126, 126, 0.395);
 }
@@ -68,6 +72,7 @@
     width: 100%;
     margin-right: 60%;
 }
+
 .actividad {
     display: flex;
     align-items: flex-start;
@@ -75,6 +80,7 @@
     margin-bottom: 8px;
     margin-left: 0;
 }
+
 .actividad p {
     margin: 0;
     font-size: 19px;
@@ -88,7 +94,8 @@
     margin: 20px 0;
     width: 330%;
 }
-p{
+
+p {
     font-size: 23px;
 }
 
@@ -124,38 +131,13 @@ p{
     border-radius: 30px;
     box-shadow: 1px 2px 5px #555;
 }
+
 /* cuidados */
 .cuidados {
     display: flex;
     gap: 35px;
     margin-top: 10px;
 
-}
-.cuidados2 {
-    display: flex;
-    gap: 35px;
-    margin-top: 10px;
-
-}
-.cuidados2 a{
-    display: block;
-}
-.cuidados2 button{
-    height: 40px;
-    width: 250px;
-    background-color: #89AB78;
-    border: none;
-    border-radius: 10px;
-    font-size: 17px;
-    color: white;
-    margin-top: 50px;
-    cursor: pointer;
-    box-shadow: 1px 2px 7px #909090;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.cuidados2 button:active{
-    transform: translateY(2px);
-    box-shadow: 0px 1px 2px #909090;
 }
 
 .cuidado {
@@ -165,12 +147,13 @@ p{
     background: #fff;
     border: 1px solid #e0e0e0;
     width: 0;
-    height: 130px;
+    height: 140px;
     flex: 0.16;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.cuidado:hover{
+
+.cuidado:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
     transition: all 0.3s ease;
@@ -178,40 +161,1025 @@ p{
 }
 
 .cuidado img {
-    width: 35px;
-    height: 35px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    width: 45px;
+    height: 45px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
-.imagenplaga{
-      width: 18%;
-    border-radius: 17px;
-    border: 7px solid #89AB78;
-}
-.imgtratamiento{
-    width: 160px;
-    height: 110px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    display: block;
-    object-fit: contain;
-    border-radius: 17px;
-    border: 7px solid #89AB78;
-}
+
 .nombre-cuidado {
     font-weight: 600;
-    font-size: 14px;
+    font-size: 17px;
     margin: 0;
     margin-bottom: 2px;
 }
 
 .detalle-cuidado {
-    font-size: 13px;
+    font-size: 14px;
     color: #777;
     margin: 0;
 }
+
+.cuidados2 {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+/* CARD */
+
+.cardplaga {
+    width: 260px;
+    height: 210px;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+    transition: 0.3s;
+}
+
+.cardplaga h3 {
+    font-size: 18px;
+    color: #1F2F1F;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.cardplaga p {
+    color: #71A567;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+.cardplaga:hover {
+    transform: translateY(-5px);
+}
+
+/* IMAGEN */
+
+.cardplaga img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 0;
+}
+
+/* BOTON AGREGAR */
+
+.btn-agregar {
+    width: 290px;
+    height: 220px;
+    border: 2px dashed #CFE2C8;
+    border-radius: 15px;
+    background: #FBFDF9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    font-weight: 600;
+    font-size: 17px;
+    color: #5C8D53;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn-agregar:hover {
+    background: #F1F7ED;
+    transform: translateY(-5px);
+}
+
+/* CIRCULO */
+
+.circulo {
+    width: 80px;
+    height: 75px;
+    border-radius: 50%;
+    background: #EEF5E9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    padding-bottom: 5px;
+
+}
+
+.card-tratamiento {
+    width: 260px;
+    height: 200px;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CIRCULO */
+
+.circulo-icono {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #EEF5E9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 0;
+}
+
+/* ICONO */
+
+.circulo-icono img {
+    width: 60px;
+}
+
+/* ESTADO */
+
+.estado {
+    margin-top: 0;
+    margin-bottom: 0;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    width: 90px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ACTIVO */
+
+.activo {
+    background: #E8F5E9;
+    border: 1px solid #A5D6A7;
+    color: #71A567;
+}
+
+/* FINALIZADO */
+
+.finalizado {
+    background: #dfdfdf;
+    color: #616161;
+    border: 1px solid #bababa;
+}
+
+.card-tratamiento:hover {
+    transform: translateY(-5px);
+}
+
+.card-tratamiento h3 {
+    font-size: 18px;
+    color: #1F2F1F;
+    margin-bottom: 0;
+    margin-top: 3px;
+}
+
+.card-tratamiento p {
+    color: #71A567;
+    font-size: 15px;
+    font-weight: 600;
+}
+
 .num {
     font-size: 14px;
     color: #555;
     min-width: 16px;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.overlay:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup {
+    width: 750px;
+    height: 80%;
+    background: white;
+    border-radius: 25px;
+    padding: 30px;
+    overflow-y: auto;
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.cerrar {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    text-decoration: none;
+    font-size: 40px;
+    color: gray;
+}
+
+.volver {
+    text-decoration: none;
+    color: #4f8f4f;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.cards-plagas {
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.card-plaga {
+    width: 180px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid #ddd;
+    border-radius: 18px;
+    padding: 15px;
+}
+
+.card-plaga img {
+    width: 100%;
+    height: 120px;
+    border-radius: 15px;
+}
+
+.tratamiento-card {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 18px;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.encabezado-tratamiento {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icono-tratamiento {
+    width: 65px;
+    height: 65px;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icono-tratamiento img {
+    width: 60px;
+    height: 60px;
+}
+
+.tratamiento-card p {
+    font-size: 17px;
+    margin-top: 0;
+    margin-bottom: 4px;
+    color: #7a7a7a;
+}
+
+.tratamiento-card h3 {
+    margin-bottom: 2px;
+}
+
+.tratamiento-card a {
+    text-decoration: none;
+    color: black;
+}
+
+.info-superior {
+    display: flex;
+    gap: 20px;
+}
+
+.info-superior p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.info-superior hr {
+    margin-left: 0;
+    margin-right: 0;
+    height: 20px;
+    margin-top: 20px;
+}
+
+.descripcion {
+    font-size: 17px;
+    margin-top: 0;
+    margin-left: 83px;
+    color: gray;
+}
+
+.paso {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    border: 1px solid #eee;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.iconopaso {
+    width: 65px;
+    height: 65px;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconopaso img {
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.paso h3 {
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.paso p {
+    font-size: 17px;
+    color: gray;
+    margin-top: 0;
+}
+
+.numeropaso {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #71A567;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 30px;
+}
+
+.btn-principal {
+    background: #4f8f4f;
+    color: white;
+
+    padding: 14px 25px;
+
+    border-radius: 12px;
+
+    text-decoration: none;
+}
+
+.btn-secundario {
+    border: 1px solid #ccc;
+
+    padding: 14px 25px;
+
+    border-radius: 12px;
+
+    text-decoration: none;
+    color: black;
+}
+
+.check {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #edf7ed;
+    color: #4f8f4f;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 130px;
+    margin-bottom: 20px;
+}
+
+.confirmacion {
+    width: 450px;
+    text-align: center;
+}
+
+.medicamento-tabla {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.medicamento-tabla img {
+    width: 70px;
+    border-radius: 14px;
+    background: #EEF5E9;
+    object-fit: contain;
+    padding: 8px;
+}
+
+.medicamento-tabla h4 {
+    margin-bottom: 4px;
+
+    font-size: 15px;
+}
+
+.medicamento-tabla p {
+    font-size: 13px;
+
+    color: #7A7A7A;
+}
+
+/* ======================================= */
+/* MODAL TRATAMIENTO */
+/* ======================================= */
+
+.ventana-tratamiento {
+    width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+    background: white;
+    border-radius: 30px;
+    padding: 35px;
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* CERRAR */
+
+.cerrar-modal {
+    position: absolute;
+
+    top: 20px;
+    right: 30px;
+
+    text-decoration: none;
+
+    font-size: 40px;
+
+    color: #8A8A8A;
+}
+
+/* HEADER */
+
+.cabecera-tratamiento {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.circulo-tratamiento-modal {
+    width: 120px;
+    height: 120px;
+
+    border-radius: 50%;
+
+    background: #EEF5E9;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circulo-tratamiento-modal img {
+    width: 65px;
+}
+
+.texto-plaga-modal {
+    color: #71A567;
+    font-size: 18px;
+    font-weight: 600;
+
+    margin-top: 8px;
+}
+
+/* ESTADO */
+
+.estado-modal-activo {
+    padding: 8px 18px;
+    border-radius: 20px;
+    background: #E8F5E9;
+    border: 1px solid #A5D6A7;
+    color: #71A567;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+
+/* BLOQUES */
+
+.bloque-modal {
+    margin-top: 35px;
+
+    border-top: 1px solid #ECECEC;
+
+    padding-top: 30px;
+}
+
+.titulo-bloque {
+    color: #5C8D53;
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+
+.iconpasoss {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.iconpasoss img {
+    width: 40x;
+    height: 40px;
+}
+
+/* PASOS */
+
+.item-paso-modal {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid #bcbcbc;
+    border-radius: 16px;
+    padding: 15px;
+    margin-bottom: 18px;
+}
+
+.numero-modal {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #71A567;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+.item-paso-modal p {
+    font-size: 18px;
+    color: #3d3d3d;
+}
+
+/* INFO */
+
+.contenedor-info-modal {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+}
+
+.caja-info-modal {
+    flex: 1;
+    border-radius: 18px;
+    padding: 15px;
+    text-align: center;
+}
+
+.caja-info-modal p {
+    font-size: 17px;
+    color: #151515;
+}
+
+.caja-info-modal h2 {
+    color: rgb(133, 133, 133);
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+/* MEDICAMENTOS */
+
+.contenedor-medicamentos-modal {
+    margin-top: 35px;
+
+    background: #F9FCF7;
+
+    border: 1px solid #E2EBDD;
+
+    border-radius: 22px;
+
+    padding: 25px;
+}
+
+.header-medicamentos-modal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+}
+
+.header-medicamentos-modal h3 {
+    color: #5C8D53;
+    font-size: 20px;
+}
+
+.header-medicamentos-modal p {
+    color: #7A7A7A;
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+/* BOTÓN */
+
+.boton-medicamento-modal {
+    background: #89AB78;
+    color: white;
+    text-decoration: none;
+    padding: 7px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+/* TABLA */
+
+.tabla-medicamentos-modal {
+    margin-top: 25px;
+}
+
+.fila-modal {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 18px 10px;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.fila-modal p {
+    font-size: 18px;
+    margin-right: 70px;
+}
+
+
+.encabezado-modal {
+    font-weight: 700;
+}
+
+.encabezado-modal p {
+    font-size: 20px;
+}
+
+/* FOOTER */
+
+.footer-modal-tratamiento {
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.boton-cerrar-modal {
+    background: #EEF5E9;
+
+    color: #5C8D53;
+
+    text-decoration: none;
+
+    padding: 14px 24px;
+
+    border-radius: 14px;
+
+    font-weight: 600;
+}
+
+/* ====================================== */
+/* MODAL MEDICAMENTOS */
+/* ====================================== */
+
+.ventana-medicamentos {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 700px;
+    max-height: 85vh;
+    overflow-y: auto;
+    background: white;
+    border-radius: 30px;
+    padding: 35px;
+    position: relative;
+}
+
+/* VOLVER */
+
+.cerrar-medicamentos {
+    text-decoration: none;
+
+    font-size: 35px;
+
+    color: #71A567;
+
+    font-weight: bold;
+}
+
+/* TEXTOS */
+
+.titulo-medicamentos {
+    margin-top: 15px;
+}
+
+.texto-medicamentos {
+    color: #7A7A7A;
+
+    margin-top: 10px;
+}
+
+/* CARD */
+
+.card-medicamento-modal {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px;
+
+    border: 1px solid #E5E5E5;
+
+    border-radius: 22px;
+
+    margin-top: 25px;
+
+    transition: 0.3s;
+
+    text-decoration: none;
+
+    color: black;
+}
+
+.card-medicamento-modal:hover {
+    background: #F7FAF5;
+
+    transform: translateY(-3px);
+}
+
+/* CONTENIDO */
+
+.contenido-medicamento {
+    display: flex;
+
+    gap: 18px;
+
+    align-items: center;
+}
+
+/* IMAGEN */
+
+.img-medicamento {
+    width: 90px;
+    height: 90px;
+    border-radius: 20px;
+    background: #EEF5E9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.img-medicamento img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 2px 2px #89AB78;
+    object-fit: contain;
+}
+
+/* TEXTOS */
+
+.card-medicamento-modal h3 {
+    margin-bottom: 8px;
+}
+
+.card-medicamento-modal p {
+    color: #7A7A7A;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+}
+
+/* TIPO */
+
+.tipo-medicamento {
+    width: max-content;
+
+    margin-top: 10px;
+
+    background: #EEF5E9;
+
+    color: #5C8D53;
+
+    padding: 7px 14px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* FLECHA */
+
+.flecha-medicamento {
+    font-size: 40px;
+
+    color: #A8A8A8;
+}
+
+/* ====================================== */
+/* DETALLE MEDICAMENTO */
+/* ====================================== */
+
+.ventana-detalle-medicamento {
+    width: 700px;
+    max-height: 85vh;
+    overflow-y: auto;
+    background: white;
+    border-radius: 30px;
+    padding: 35px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* VOLVER */
+
+.volver-detalle {
+    display: flex;
+}
+
+.volver-detalle img {
+    width: 50px;
+    height: 50px;
+
+}
+
+/* HEADER */
+
+.header-detalle-medicamento {
+    display: flex;
+
+    gap: 25px;
+
+    align-items: center;
+
+    margin-top: 20px;
+}
+
+/* IMAGEN */
+
+.img-detalle-medicamento {
+    width: 120px;
+    height: 120px;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-detalle-medicamento img {
+    width: 100%;
+    border-radius: 24px;
+    border: 2px solid #71A567;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+
+}
+
+/* BADGE */
+
+.badge-medicamento {
+    width: max-content;
+    margin-top: 15px;
+    background: #EEF5E9;
+    color: #5C8D53;
+    padding: 8px 15px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* DESCRIPCIÓN */
+
+.descripcion-detalle-medicamento {
+    margin-top: 30px;
+}
+
+.descripcion-detalle-medicamento p {
+    color: #6F6F6F;
+    font-size: 20px;
+}
+
+/* INFO */
+
+.contenedor-info-detalle {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.info-detalle-box {
+    flex: 1;
+    background: #F8FBF6;
+    border: 1px solid #E2EBDD;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 18px;
+    padding: 20x;
+}
+
+.info-detalle-box h3 {
+    margin-left: 20px;
+    color: #5C8D53;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.info-detalle-box p {
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 18px;
+    color: gray;
+}
+
+/* INSTRUCCIONES */
+
+.instrucciones-detalle {
+    margin-top: 30px;
+    background: #F8FBF6;
+    border: 1px solid #E2EBDD;
+    border-radius: 18px;
+    padding: 20px;
+}
+
+.instrucciones-detalle h3 {
+    color: #5C8D53;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.instrucciones-detalle p {
+    font-size: 18px;
+    color: #5F5F5F;
+}
+
+/* FOOTER */
+
+.footer-detalle-medicamento {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 15px;
+
+    margin-top: 35px;
+}
+
+/* BOTONES */
+
+.btn-cancelar-detalle {
+    border: 1px solid #D7D7D7;
+
+    color: #4F4F4F;
+
+    padding: 14px 22px;
+
+    border-radius: 14px;
+
+    text-decoration: none;
+}
+
+.btn-agregar-detalle {
+    background: #5C8D53;
+
+    color: white;
+
+    padding: 14px 22px;
+
+    border-radius: 14px;
+
+    text-decoration: none;
+
+    font-weight: 600;
 }

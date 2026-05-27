@@ -149,18 +149,56 @@
           </div>
         </div>
         <h2 class="subtitulo">Plagas</h2>
-        <hr>
         <div class="cuidados2">
-          <img class="imagenplaga"  src="imagenes/cochinilla.webp" alt="">
-          <img class="imagenplaga"  src="imagenes/pulgonverde.jpg" alt="">
-         <button onclick="window.location.href='explorarplaga.html'">+ Agregar plaga</button>
+          <div class="cardplaga">
+            <img src="imagenes/cochinilla.webp" alt="">
+            <h3>Cochinilla</h3>
+            <div class="estado activo">
+              <p>Activa</p>
+            </div>
+          </div>
+          <div class="cardplaga">
+            <img src="imagenes/pulgonverde.jpg" alt="">
+            <h3>Pulgón verde</h3>
+            <div class="estado finalizado">
+              <p style="color: #8c8c8c;">Erradicada</p>
+            </div>
+          </div>
+          <a class="btn-agregar" href="explorarplaga.html">
+            <div class="circulo">+</div>
+            Agregar plaga
+          </a>
         </div>
+        <!-- TRATAMIENTOS -->
         <h2 class="subtitulo">Tratamientos</h2>
-        <hr>
         <div class="cuidados2">
-          <a href="tratamiento.html"><img class="imgtratamiento" src="imagenes/tratamiento.png" alt=""></a>
-          <img class="imgtratamiento" src="imagenes/tratamiento.png" alt="">
-         <button onclick="window.location.href='agregartratamiento.html'">+ Agregar tratamiento</button>
+          <a href="#modal-tratamiento" class="card-tratamiento">
+            <div class="circulo-icono">
+              <img src="imagenes/tratamiento1.png" alt="">
+            </div>
+            <h3>Contról intensivo</h3>
+            <p>Para: Cochinilla
+
+            </p>
+            <div class="estado activo">
+              <p>Activo</p>
+            </div>
+          </a>
+          <!-- CARD 2 -->
+          <div class="card-tratamiento">
+            <div class="circulo-icono">
+              <img src="imagenes/tratamiento2.png" alt="">
+            </div>
+            <h3>Protección preventiva</h3>
+            <p>Para: Pulgón verde</p>
+            <div class="estado finalizado">
+              <p style="color: #8c8c8c;">Finalizado</p>
+            </div>
+          </div>
+          <a href="#popup-plagas" class="btn-agregar">
+            <div class="circulo">+</div>
+            Agregar tratamiento
+          </a>
         </div>
       </div>
       <div class="columna-derecha">
@@ -191,6 +229,530 @@
 
     </div>
   </section>
+  <div id="popup-plagas" class="overlay">
+
+    <div class="popup">
+
+      <a href="#" class="cerrar">×</a>
+
+      <h2>Selecciona una plaga</h2>
+
+      <div class="cards-plagas">
+
+        <a href="#popup-tratamientos" class="card-plaga">
+
+          <img src="imagenes/cochinilla.webp">
+          <h3>Cochinilla</h3>
+        </a>
+        <a href="#popup-tratamientos" class="card-plaga">
+          <img src="imagenes/pulgonverde.jpg">
+          <h3>Pulgón verde</h3>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="popup-tratamientos" class="overlay">
+    <div class="popup">
+      <a href="#popup-plagas" class="volver">
+        ← Atrás
+      </a>
+      <a href="#" class="cerrar">×</a>
+      <h2>Tratamientos para Cochinilla</h2>
+      <div class="tratamiento-card">
+        <a href="#popup-detalle">
+          <div class="encabezado-tratamiento">
+            <div class="icono-tratamiento">
+              <img src="imagenes/tratamiento1.png" alt="">
+            </div>
+            <div>
+              <h3>Control intensivo</h3>
+              <p>15 días · 4 pasos</p>
+              <p>Tratamiento completo para eliminar cochinilla algodonosa en infestaciones avanzadas</p>
+            </div>
+          </div>
+        </a>
+
+      </div>
+      <div class="tratamiento-card">
+        <a href="#popup-detalle">
+          <div class="encabezado-tratamiento">
+            <div class="icono-tratamiento">
+              <img src="imagenes/tratamiento2.png" alt="">
+            </div>
+            <div>
+              <h3>Tratamiento Orgánico</h3>
+              <p> 10 días · 3 pasos</p>
+              <p>opción orgánica para tratar las cochinillas de forma natural</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+
+  </div>
+  <div id="popup-detalle" class="overlay">
+
+    <div class="popup detalle">
+
+      <a href="#popup-tratamientos" class="volver">
+        ← Atrás
+      </a>
+
+      <a href="#" class="cerrar">×</a>
+      <h2>Control intensivo de cochinilla</h2>
+      <div class="info-superior">
+        <div class="icono-tratamiento">
+          <img src="imagenes/tratamiento1.png" alt="">
+        </div>
+        <p>Duración: 15 días</p>
+        <hr>
+        <p>4 pasos</p>
+      </div>
+      <p class="descripcion">Tratamiento completo para eliminar cochinilla algodonosa en infestaciones avanzadas</p>
+      <h3>Procedimiento</h3>
+      <div class="paso">
+        <div class="numeropaso">1</div>
+        <div class="iconopaso">
+          <img src="imagenes/paso1.png" alt="">
+        </div>
+        <div>
+          <h3>
+            Diluir jabón potásico en 1 litro de agua
+          </h3>
+          <p>
+            Mezcla 20 ml de jabón potásico en 1 litro de agua.
+          </p>
+        </div>
+      </div>
+      <div class="paso">
+        <div class="numeropaso">2</div>
+        <div class="iconopaso">
+          <img src="imagenes/paso2.png" alt="">
+        </div>
+        <div>
+          <h3>
+            Aplicar en hojas y tallos afectados.
+          </h3>
+
+          <p>
+            Aplicar la mezcla del primer paso sobre hojas y tallos.
+          </p>
+        </div>
+      </div>
+      <div class="paso">
+        <div class="numeropaso">3</div>
+        <div class="iconopaso">
+          <img src="imagenes/paso3.png" alt="">
+        </div>
+        <div>
+          <h3>
+            Retirar cochinillas visibles en la planta.
+          </h3>
+          <p>
+            Limpiar manualmente las zonas con mayor infestación.
+          </p>
+        </div>
+      </div>
+      <div class="paso">
+        <div class="numeropaso">4</div>
+        <div class="iconopaso">
+          <img src="imagenes/paso4.png" alt="">
+        </div>
+        <div>
+          <h3>
+            Repetir cada 5 días
+          </h3>
+
+          <p>
+            Mantener el tratamiento durante 15 días.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="botones">
+
+        <a href="#popup-tratamientos" class="btn-secundario">
+          Atrás
+        </a>
+
+        <a href="#popup-confirmacion" class="btn-principal">
+          Agregar tratamiento
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+  <div id="popup-confirmacion" class="overlay">
+
+    <div class="popup confirmacion">
+
+      <div class="check">
+        ✓
+      </div>
+
+      <h2>¡Tratamiento agregado!</h2>
+
+      <p>
+        El tratamiento fue añadido correctamente.
+      </p>
+
+      <a href="#" class="btn-principal">
+        Cerrar
+      </a>
+
+    </div>
+
+  </div>
+  <div id="modal-tratamiento" class="overlay">
+
+    <div class="ventana-tratamiento">
+
+      <a href="#" class="cerrar-modal">×</a>
+
+      <!-- HEADER -->
+
+      <div class="cabecera-tratamiento">
+        <div class="circulo-tratamiento-modal">
+          <img src="imagenes/tratamiento1.png" alt="">
+        </div>
+        <div>
+          <h2>Control intensivo</h2>
+          <p class="texto-plaga-modal">
+            Para: Cochinilla
+          </p>
+        </div>
+      </div>
+      <!-- PASOS -->
+      <div class="bloque-modal">
+        <h3 class="titulo-bloque">Procedimiento</h3>
+        <!-- PASO -->
+        <div class="item-paso-modal">
+
+          <div class="numero-modal">
+            1
+          </div>
+          <div class="iconpasoss">
+            <img src="imagenes/paso1.png" alt="">
+            <p>Diluir jabón potásico en 1 litro de agua</p>
+          </div>
+        </div>
+        <div class="item-paso-modal">
+          <div class="numero-modal">
+            2
+          </div>
+          <div class="iconpasoss">
+            <img src="imagenes/paso2.png" alt="">
+            <p>Aplicar en hojas y tallos afectados.</p>
+          </div>
+        </div>
+        <div class="item-paso-modal">
+          <div class="numero-modal">
+            3
+          </div>
+          <div class="iconpasoss">
+            <img src="imagenes/paso3.png" alt="">
+            <p>Retirar cochinillas visibles en la planta.</p>
+          </div>
+        </div>
+        <div class="item-paso-modal">
+          <div class="numero-modal">
+            4
+          </div>
+          <div class="iconpasoss">
+            <img src="imagenes/paso4.png" alt="">
+            <p>Repetir cada 5 días.</p>
+          </div>
+        </div>
+      </div>
+      <!-- INFO -->
+      <div class="bloque-modal">
+        <h3 class="titulo-bloque">
+          Información del tratamiento
+        </h3>
+        <div class="contenedor-info-modal">
+          <div class="caja-info-modal">
+            <h2>Fecha inicio</h2>
+            <p>20 May 2025</p>
+          </div>
+          <hr>
+          <div class="caja-info-modal">
+            <h2>Fecha final</h2>
+            <p>27 May 2025</p>
+          </div>
+          <hr>
+          <div class="caja-info-modal">
+            <h2>Estado</h2>
+            <div class="estado-modal-activo">
+              Activo
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MEDICAMENTOS -->
+
+      <div class="contenedor-medicamentos-modal">
+
+        <div class="header-medicamentos-modal">
+          <div>
+            <h3>
+              Medicamentos
+            </h3>
+            <p>
+              Agrega medicamentos adicionales
+              para este tratamiento.
+            </p>
+          </div>
+          <a href="#popup-medicamentos" class="boton-medicamento-modal">
+            + Agregar medicamento
+          </a>
+        </div>
+        <!-- TABLA -->
+        <div class="tabla-medicamentos-modal">
+
+          <div class="fila-modal encabezado-modal">
+
+            <p>Medicamento</p>
+
+            <p>Dosis</p>
+
+            <p>Frecuencia</p>
+
+          </div>
+
+   <div class="fila-modal">
+
+    <div class="medicamento-tabla">
+
+        <img src="imagenes/medicamento2.webp" alt="">
+
+        <div>
+
+            <h4>Aceite de neem</h4>
+
+            <p>Insecticida natural</p>
+
+        </div>
+
+    </div>
+
+    <p>
+        5 ml/L
+    </p>
+
+    <p>
+        Cada 5 días
+    </p>
+
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ====================================== -->
+  <!-- MODAL MEDICAMENTOS -->
+  <!-- ====================================== -->
+
+  <div id="popup-medicamentos" class="overlay">
+
+    <div class="ventana-medicamentos">
+
+      <a href="#modal-tratamiento" class="cerrar-medicamentos">
+        <div class="volver-detalle">
+          <img class="" src="imagenes/atras.png" alt="">
+        </div>
+      </a>
+
+      <h2 class="titulo-medicamentos">
+        Medicamentos recomendados
+      </h2>
+
+      <p class="texto-medicamentos">
+        Selecciona un medicamento adicional
+        para este tratamiento.
+      </p>
+
+      <!-- MEDICAMENTO -->
+
+      <a href="#detalle-medicamento" class="card-medicamento-modal">
+
+        <div class="contenido-medicamento">
+
+          <div class="img-medicamento">
+            <img src="imagenes/medicamento1.webp" alt="">
+          </div>
+
+          <div>
+
+            <h3>Jabón potásico</h3>
+
+            <p>
+              Insecticida natural para
+              cochinillas y pulgones.
+            </p>
+
+            <div class="tipo-medicamento">
+              Orgánico
+            </div>
+
+          </div>
+
+        </div>
+
+        <span class="flecha-medicamento">
+          ›
+        </span>
+
+      </a>
+
+      <!-- MEDICAMENTO -->
+
+      <a href="#detalle-medicamento" class="card-medicamento-modal">
+
+        <div class="contenido-medicamento">
+
+          <div class="img-medicamento">
+            <img src="imagenes/medicamento2.webp" alt="">
+          </div>
+
+          <div>
+
+            <h3>Aceite de neem</h3>
+
+            <p>
+              Control natural para
+              plagas de jardín.
+            </p>
+
+            <div class="tipo-medicamento">
+              Natural
+            </div>
+
+          </div>
+
+        </div>
+
+        <span class="flecha-medicamento">
+          ›
+        </span>
+
+      </a>
+
+    </div>
+
+  </div>
+  <!-- ====================================== -->
+  <!-- DETALLE MEDICAMENTO -->
+  <!-- ====================================== -->
+
+  <div id="detalle-medicamento" class="overlay">
+
+    <div class="ventana-detalle-medicamento">
+
+      <!-- VOLVER -->
+
+      <a href="#popup-medicamentos" class="volver-detalle">
+        <img src="imagenes/atras.png" alt="">
+      </a>
+
+      <!-- HEADER -->
+
+      <div class="header-detalle-medicamento">
+
+        <div class="img-detalle-medicamento">
+
+          <img src="imagenes/medicamento2.webp" alt="">
+
+        </div>
+
+        <div>
+
+          <h2>Aceite de neem</h2>
+
+          <div class="badge-medicamento">
+            Insecticida natural
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- DESCRIPCIÓN -->
+      <div class="descripcion-detalle-medicamento">
+
+        <p>
+          El aceite de neem es un insecticida orgánico obtenido de las semillas del árbol neem.
+          Se utiliza para controlar plagas, afectando su alimentación y reproducción sin dañar la planta.
+        </p>
+
+      </div>
+
+      <!-- INFO -->
+
+      <div class="contenedor-info-detalle">
+
+        <div class="info-detalle-box">
+
+          <h3>Dosis</h3>
+
+          <p>
+            Mezclar 5 ml de aceite por cada litro de agua.
+          </p>
+
+        </div>
+
+        <div class="info-detalle-box">
+
+          <h3>Frecuencia</h3>
+
+          <p>
+            cada 5 a 7 días.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- INSTRUCCIONES -->
+
+      <div class="instrucciones-detalle">
+
+        <h3>Instrucciones</h3>
+
+        <p>
+          Pulverizar sobre hojas, tallos y zonas afectadas, especialmente en el envés
+          de las hojas. Aplicar al atardecer o en horas de poca exposición solar para
+          evitar daños en la planta.
+        </p>
+
+      </div>
+
+      <!-- BOTONES -->
+
+      <div class="footer-detalle-medicamento">
+
+        <a href="#popup-medicamentos" class="btn-cancelar-detalle">
+
+          Cancelar
+
+        </a>
+
+        <a href="#modal-tratamiento" class="btn-agregar-detalle">
+
+          Agregar medicamento
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
 </body>
 
 </html>
