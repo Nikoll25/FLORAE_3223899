@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  height: 100vh;
+  display: flex;
+  background: url("imagenes/Fondo.png") no-repeat center center / cover;
+}
+
+.izquierda {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  text-align: center;
+}
+
+.izquierda img {
+  width: 160px;
+  margin-bottom: 24px;
+}
+
+.izquierda h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 3.2rem;
+  color: #2d4a2d;
+  margin-bottom: 14px;
+}
+
+.izquierda p {
+  font-size: 1rem;
+  color: #4a5e4a;
+  max-width: 280px;
+  line-height: 1.6;
+}
+
+.derecha {
+  width: 50%;
+  height: 100vh;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.85), rgba(180,255,180,0.45));
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-left: 1.5px solid rgba(108,140,92,0.4);
+  box-shadow: -6px 0 30px rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 40px;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 30px;
+  align-self: flex-start;
+}
+
+.header img {
+  width: 26px;
+}
+
+.header span {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.1rem;
+  color: #2d4a2d;
+}
+
+.icono-grande {
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1e2d1e;
+  margin-bottom: 8px;
+}
+
+.sub {
+  font-size: 0.82rem;
+  color: #6b856b;
+  margin-bottom: 28px;
+  max-width: 280px;
+  line-height: 1.5;
+}
+
+.btn-rojo {
+  width: 100%;
+  padding: 12px;
+  background: #fff;
+  color: #b94a4a;
+  border: 1.5px solid #f0c0c0;
+  border-radius: 12px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.btn-rojo:hover {
+  background: #fff0f0;
+}
+
+.btn-gris {
+  width: 100%;
+  padding: 12px;
+  background: rgba(200,200,200,0.35);
+  color: #4a5e4a;
+  border: 1px solid rgba(108,140,92,0.3);
+  border-radius: 12px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-gris:hover {
+  background: rgba(180,220,180,0.45);
+}
